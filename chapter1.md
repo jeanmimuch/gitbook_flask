@@ -4,7 +4,7 @@
 
 Historiquement, les premiers logiciels informatiques s'articulaient autour d'une architecture 100% locale. Dans cette architecture, l'ordinateur devait assumer tous les rôles: gestion de l'interface homme-machine (IHM), traitement de l'information, stockage de l'information, etc. Avec la multiplication des systèmes d'exploitation et le developpement rapide d'internet, cette architecture locale a vite montré ses limites. D'une part compte tenu de la multiplication des systèmes d'exploitation (MacOs, Windows, Linux, Unix), les developpeurs ne devaient plus programmer un logiciel mais **des** logiciels et fournir des mises à jour régulièrement. D'autre part avec le developpement d'Internet, les informations se sont progressivement déplacer sur le net dans de gigantesques bases de données partagées. Pour résoudre ces problèmes, une nouvelle architecture s'est imposée: l'architecture client-serveur.
 
-![Architecture Client-Serveur](img/client-server-model.svg)
+![Architecture Client-Serveur](img/client-server-model.png)
 
 Dans une architecture client-serveur, le client va principalement s'occuper de l'IHM. En fonction des actions de l'utilisateur, le client va envoyer des requêtes à un serveur web. Ce serveur va ensuite effectuer le traitement des requêtes, en interagissant si besoin avec une base de données. Enfin, le serveur va renvoyer le résultat des traitements au client. 
 
