@@ -13,6 +13,9 @@
       location = "group:chapter1.md">
    </FileRef>
    <FileRef
+      location = "group:chapter2.md">
+   </FileRef>
+   <FileRef
       location = "group:README.md">
    </FileRef>
    <FileRef

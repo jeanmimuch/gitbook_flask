@@ -1,4 +1,4 @@
-# Programmation Web
+# Introduction à la Programmation Web
 
 ## Architecture Client Serveur
 
@@ -21,14 +21,14 @@ Dans ce tutoriel, nous allons utiliser le langage Python pour programmer les tra
 
 ## Frameworks Python
 
-Il existe plusieurs Framework web developpés en Python. 
+Il existe plusieurs Framework web pour le langage Python. 
 
 * Django: [31000 stars](https://github.com/django/django) sur Github
 * Flask: [31000 stars](https://github.com/pallets/flask) sur Github
 * Tornado: [14000 stars](https://github.com/tornadoweb/tornado) sur Github
 * Pyramid: [2500 stars](https://github.com/Pylons/pyramid) sur Github
 
-Les deux frameworks les plus utilisés sont Django et Flask. Dans l'esprit, ces deux frameworks sont toutefois très différents. Django est un framework très complet qui intégre un grand nombre de fonctionnalités. Ce framework est utilisé entre autre par Instagram ou par Pinterest. A l'inverse, Flask est un framework beaucoup plus minimal. Ce micro-framework n'intègre que les fonctionnalités de base. Cependant ne vous trompez pas, Flask permet le developpement d'application web relativement complexe.
+Les deux frameworks les plus utilisés sont Django et Flask. Ces deux frameworks sont toutefois très différents dans l'esprit. Django est un framework très complet qui intégre un grand nombre de fonctionnalités. Ce framework est utilisé entre autre par Instagram ou par Pinterest. A l'inverse, Flask est un framework beaucoup plus minimal. Ce micro-framework n'intègre que les fonctionnalités de base. Cependant ne vous trompez pas, Flask permet le developpement d'application web relativement complexe.
 
 
 
