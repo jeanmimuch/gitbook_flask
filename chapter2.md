@@ -45,6 +45,8 @@ $ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 Dans cette section, nous allons développer une application web minimale pour gérer ses contacts. Nous allons considérer ici que nos contacts sont stockés dans une liste de dictionnaires python initialisée dans le fichier server.py. Dans un premier temps, notre objectif sera d'afficher les contacts dans un tableau html (balise `<table>`).
 
 
+{% include "./src/src2/server.py" %}
+
 ```python
 from flask import Flask
 app = Flask(__name__)
