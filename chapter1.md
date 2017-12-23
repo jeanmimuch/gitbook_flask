@@ -19,16 +19,18 @@ Ces interfaces sont alors interpretées par un navigateur internet comme Chrome,
 
 Dans ce tutoriel, nous allons utiliser le langage Python pour programmer les traitements de notre serveur. Par rapport aux langages PHP et Ruby, le Python possède une incroyable polyvalence. 
 
-## Framework Python
+## Frameworks Python
 
 Il existe plusieurs Framework web developpés en Python. 
 
-* Flask: [31000 stars](https://github.com/pallets/flask) sur Github
 * Django: [31000 stars](https://github.com/django/django) sur Github
+* Flask: [31000 stars](https://github.com/pallets/flask) sur Github
 * Tornado: [14000 stars](https://github.com/tornadoweb/tornado) sur Github
 * Pyramid: [2500 stars](https://github.com/Pylons/pyramid) sur Github
 
-Dans ce tutoriel, nous allons nous interesser au (micro) Framework Flask. 
+Les deux frameworks les plus utilisés sont Django et Flask. Dans l'esprit, ces deux frameworks sont toutefois très différents. Django est un framework très complet qui intégre un grand nombre de fonctionnalités. Ce framework est utilisé entre autre par Instagram ou par Pinterest. A l'inverse, Flask est un framework beaucoup plus minimal. Ce micro-framework n'intègre que les fonctionnalités de base. Cependant ne vous trompez pas, Flask permet le developpement d'application web relativement complexe.
+
+
 
 
 
