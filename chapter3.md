@@ -13,7 +13,7 @@
 
 ## Pourquoi un moteur de template
 
-Dans notre première implémentation du code, nous avons créer le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est possible de sous-traiter la conception des pages à un moteur de template. A chacun son rôle, Flask pour le traitement des informations et un moteur de template pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
+Dans notre première implémentation du code, nous avons créer le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est possible de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire ne Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
 
 Concrêtement, un moteur de template permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un fichier avec une structure bien spécifique (html, xml, txt, tex). Tout comme d'autres langage de programmation, le moteur de template intègre certaines structures de contrôle de base comme le `for` ou le `ìf`. Le moteur de template possède également un mécanisme d'héritage permettant d'éviter les répétitions de codes et de respecter le dogmatique principe **Don't Repeat Yourself**.
 
