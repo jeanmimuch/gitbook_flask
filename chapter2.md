@@ -3,6 +3,8 @@
 ![version](https://img.shields.io/badge/flask-v0.12.2-brightgreen.svg)  
 ![version](https://img.shields.io/badge/python-v3.4-brightgreen.svg)
 
+[!flask](http://flask.pocoo.org/static/logo/flask.svg)
+
 > Installation de Flask: `pip install flask`
 
 Dans ce tutorial, nous allons apprendre à créer une application web pour gérer ses contacts. Dans un premier temps, nous allons considérer ici que nos contacts sont stockés dans une liste python. Notre premier objectif sera d'afficher les contacts dans un tableau html.

@@ -7,6 +7,58 @@
    <Group
       location = "group:src"
       name = "src">
+      <Group
+         location = "group:src2"
+         name = "src2">
+         <Group
+            location = "group:__pycache__"
+            name = "__pycache__">
+            <FileRef
+               location = "group:server.cpython-34.pyc">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:server.py">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:src3"
+         name = "src3">
+         <Group
+            location = "group:__pycache__"
+            name = "__pycache__">
+            <FileRef
+               location = "group:server.cpython-34.pyc">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:server.py">
+         </FileRef>
+         <Group
+            location = "group:templates"
+            name = "templates">
+            <FileRef
+               location = "group:index.html">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:src1"
+         name = "src1">
+         <Group
+            location = "group:__pycache__"
+            name = "__pycache__">
+            <FileRef
+               location = "group:server.cpython-34.pyc">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:server.py">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:client-server-model.svg">
+      </FileRef>
    </Group>
    <Group
       location = "group:img"
