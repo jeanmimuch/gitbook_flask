@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/python-v3.4-brightgreen.svg">
 </div>
 
-(http://flask.pocoo.org/static/logo/flask.svg)
+![Logo flask](http://flask.pocoo.org/static/logo/flask.svg)
 
 > Installation de Flask: `pip install flask`
 
