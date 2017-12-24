@@ -19,7 +19,7 @@ Concrêtement, un moteur de template permet à partir de plusieurs informations 
 
 ## Le moteur Jinja2
 
-> Documentation: [Jinja2](http://jinja.pocoo.org/docs/2.10/)
+> La Documentation de Jinja2 est disponible à l'adresse: (http://jinja.pocoo.org/docs/2.10/)
 
 Le plus souvent Jinja2 est utilisé pour créer des pages au format html. Dans cette configuration, les templates sont stockés dans des fichiers html intègrant des **tags** particuliers. Certains tags permettent notamment d'inclure des structures de contrôle. Le moteur de template possède également un mécanisme d'héritage permettant d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
 
