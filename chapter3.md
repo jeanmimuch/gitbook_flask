@@ -21,7 +21,7 @@ Concrêtement, un moteur de template permet à partir de plusieurs informations 
 
 > Documentation: [Jinja2](http://jinja.pocoo.org/docs/2.10/)
 
-Le plus souvent Jinja2 est utilisé pour créer des pages au format html. Dans cette configuration, les templates sont stockés dans des fichiers html intègrant des **tags** particulier. Tout comme d'autres langage de programmation, Jinja2 intègre certaines structures de contrôle. Le moteur de template possède également un mécanisme d'héritage permettant d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
+Le plus souvent Jinja2 est utilisé pour créer des pages au format html. Dans cette configuration, les templates sont stockés dans des fichiers html intègrant des **tags** particuliers. Certains tags permettent notamment d'inclure des structures de contrôle. Le moteur de template possède également un mécanisme d'héritage permettant d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
 
 ### Variables
 
@@ -59,7 +59,7 @@ Jinja2 permet d'intégrer des blocs personnalisés. Ces blocs sont souvent surch
 
 ### Héritage
 
-Un template peut hériter d'un autre template en ajoutant, à la première ligne du template, le tag
+Un template peut hériter d'un autre template en ajoutant au début du fichier le tag
 
 ```
 {% extend "base.html" %}
