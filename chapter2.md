@@ -3,7 +3,7 @@
 ![version](https://img.shields.io/badge/flask-v0.12.2-brightgreen.svg)  
 ![version](https://img.shields.io/badge/python-v3.4-brightgreen.svg)
 
-[!flask](http://flask.pocoo.org/static/logo/flask.svg)
+![flask](http://flask.pocoo.org/static/logo/flask.svg)
 
 > Installation de Flask: `pip install flask`
 
