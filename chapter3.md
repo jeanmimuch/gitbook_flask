@@ -47,9 +47,9 @@ Ce script permet de charger le template `index.html` et d'afficher le résultat.
 
 ## Seconde implémentation
 
-Pour utiliser le moteur de template Jinja2 avec Flask, en plus de l'arborescence particulière décrite précédemment, il est nécessaire d'importer la fonction `render_template` (`from flask import render_template`). La fonction `render_template` prend en entrée plusieurs arguments:
+Pour utiliser le moteur de template Jinja2 avec Flask, il est nécessaire d'importer la fonction `render_template` (`from flask import render_template`). La fonction `render_template` prend en entrée plusieurs arguments:
 
-* un template html
+* un template html disponible dans le repertoire `templates`.
 * une liste de variables à passer au template.
 
 Le programme suivant montre comment intégrer nos templates Jinja2 à notre première version de l'application.
