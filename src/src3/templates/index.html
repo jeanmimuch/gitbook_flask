@@ -1,3 +1,8 @@
+{% extends "base.html" %}
+
+{% block titre %}Liste des contacts{% endblock %}
+
+{% block contenu %}
 <table>
     <tr>
         <th>Nom</th>
@@ -14,3 +19,4 @@
     </tr>
     {% endfor %}
 </table>
+{% endblock %}

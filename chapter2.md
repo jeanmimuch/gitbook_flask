@@ -6,7 +6,7 @@
 </div>
 
 <div style="text-align:center;">
-<img src="http://flask.pocoo.org/static/logo/flask.svg" height="100"/>
+<img src="http://flask.pocoo.org/static/logo/flask.svg" height="150"/>
 </div>
 
 Dans cette première partie, nous allons afficher une liste de contacts stockés dans une liste python dans un tableau html au moyen du Framework Flask.
@@ -45,7 +45,9 @@ $ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 ## Première implémentation
 
-Dans notre première implémentation, nous allons considérer que nos contacts sont stockés dans une liste python initialisée dans le fichier server.py. Le programme suivant permet d'afficher les contacts dans un tableau html \(balise `<table>`\).
+Dans notre première implémentation, nous allons considérer que les contacts sont stockés dans une liste python nommée `contact_list`. Cette liste est initialisée dans le fichier `server.py`.
+
+Le programme suivant permet d'afficher les contacts dans un tableau html \(balise `<table>`\).
 
 [import](./src/src2/server.py)
 
