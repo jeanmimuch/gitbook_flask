@@ -2,7 +2,6 @@
 
 <div>
 <img src="https://img.shields.io/badge/flask-v0.12.2-brightgreen.svg"> 
-<img src="https://img.shields.io/badge/python-v3.4-brightgreen.svg">
 </div>
 
 <div style="text-align:center;">
