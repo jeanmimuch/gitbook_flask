@@ -1,3 +1,3 @@
 {
-    "plugins": ["katex","image-captions","youtube"]
+    "plugins": ["katex","image-captions","youtube","include-codeblock"]
 }
