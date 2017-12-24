@@ -10,11 +10,10 @@ Dans une architecture client-serveur, le client va principalement s'occuper de l
 
 Pour programmer une application web, il est donc nécessaire de programmer conjointement un logiciel pour le client (gestion de l'IHM) et un logiciel pour le serveur (traitement et stockage de l'information). 
 
-* Côté client. Quelque soit votre système d'exploitation, les interfaces homme-machine sont principalement programmées en HTML/CSS/JS. 
+* Côté client. Quelque soit votre système d'exploitation, les interfaces homme-machine sont principalement programmées en HTML/CSS/JS et sont interprétées par votre navigateur internet (Chrome, Firefox, Safari, IE). 
     * HTML: Gestion du fond (contenu)
     * CSS: Gestion de la forme (apparence graphique)
     * JS: Gestion des interactions.
-Ces interfaces sont alors interpretées par un navigateur internet comme Chrome, Firefox, Safari, IE, etc.
 * Côté serveur. Le traitement des informations peut être gêré par quasiment tous les langages de programmation. Toutefois, certains langages se sont démarqués en proposant des Frameworks spécialisés pour le web. Par exemple, citons le PHP (framework: Laravel ou Symfony), le Ruby (framework: ruby on rails) ou bien le Python. 
 
 Dans ce tutoriel, nous allons utiliser le langage Python pour programmer les traitements de notre serveur. Par rapport aux langages PHP et Ruby, le Python possède une incroyable polyvalence. 
