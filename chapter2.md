@@ -5,8 +5,9 @@
 <img src="https://img.shields.io/badge/python-v3.4-brightgreen.svg">
 </div>
 
-
-<img src="http://flask.pocoo.org/static/logo/flask.svg" height="100" style="text-align:center;"/>
+<div style="text-align:center;">
+<img src="http://flask.pocoo.org/static/logo/flask.svg" height="100"/>
+</div>
 
 Dans cette première partie, nous allons afficher une liste de contacts stockés dans une liste python dans un tableau html au moyen du Framework Flask.
 
