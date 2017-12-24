@@ -61,8 +61,9 @@ Jinja2 permet d'intégrer des blocs personnalisés. Ces blocs sont souvent surch
 
 Un template peut hériter d'un autre template en ajoutant, à la première ligne du template, le tag
 
+```
 {% extend "base.html" %}
-
+```
 
 ## Implémentation.
 
