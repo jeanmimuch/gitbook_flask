@@ -9,9 +9,10 @@
 
 > Installation de Flask: `pip install flask`
 
-Dans ce tutorial, nous allons apprendre à créer une application web pour gérer ses contacts. Dans un premier temps, nous allons considérer ici que nos contacts sont stockés dans une liste python. Notre premier objectif sera d'afficher les contacts dans un tableau html.
+Dans cette première partie, nous allons afficher une liste de contacts stockés dans une liste python dans un tableau html au moyen du Framework Flask.
 
 ## Premier pas en Flask
+
 
 Pour créer un application web en Flask, nous allons créer un fichier `server.py`. Dans ce fichier, nous allons inscrire le code Python suivant:
 
