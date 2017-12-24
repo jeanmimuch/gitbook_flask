@@ -7,12 +7,17 @@
 
 ![Logo flask](http://flask.pocoo.org/static/logo/flask.svg)
 
-> Installation de Flask: `pip install flask`
+
 
 Dans cette première partie, nous allons afficher une liste de contacts stockés dans une liste python dans un tableau html au moyen du Framework Flask.
 
-## Premier pas en Flask
+## Pourquoi un framework web ?
 
+Lors du développement d'une application web, il faut gérer des fonctionnalités très diverses telles que la gestion des requêtes http, leur routage, les interactions avec la base de données, l'authentification des utilisateurs, la protection du site vis à vis des requêtes malveillantes, le renvoi de pages html, etc. Le codage de l'ensemble de ses fonctionnalités peut rapidement devenir complexe. Pour aller plus vite (et éviter de réinventer la roue), il est possible d'utiliser un framework web intégrant l'ensemble de ses fonctionnalités.
+
+## Premiers pas
+
+> Installation de Flask: `pip install flask`
 
 Pour créer un application web en Flask, nous allons créer un fichier `server.py`. Dans ce fichier, nous allons inscrire le code Python suivant:
 
@@ -40,7 +45,7 @@ $ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 ## Première implémentation
 
-Dans cette section, nous allons développer une application web minimale pour gérer ses contacts. Nous allons considérer ici que nos contacts sont stockés dans une liste de dictionnaires python initialisée dans le fichier server.py. Dans un premier temps, notre objectif sera d'afficher les contacts dans un tableau html \(balise `<table>`\).
+Dans notre première implémentation, nous allons considérer que nos contacts sont stockés dans une liste python initialisée dans le fichier server.py. Le programme suivant permet d'afficher les contacts dans un tableau html \(balise `<table>`\).
 
 [import](./src/src2/server.py)
 

@@ -8,7 +8,13 @@ contact_list=[{"nom":"Einstein","prenom":"Albert","tel":"06.00.00.00.00","mail":
 @app.route('/')
 def index():
     #construction de la chaine html
-    html="<table>\n"
+    
+    html="<!DOCTYPE html>\n"
+    html=html+"<html>\n"
+    html=html+"<head><title>Mon site de gestion de contact</title></head>\n"
+    html=html+"<body>\n"
+    html=html+"<h1>Mes contacts</h1>\n"
+    html=html+"<table>\n"
     html=html+"<tr>\n"
     html=html+"<th>Nom</th><th>Prenom</th><th>Telephone</th><th>Email</th>"
     html=html+"</tr>\n"
@@ -24,4 +30,7 @@ def index():
         html=html+"</tr>\n"
 
     html=html+"</table>\n"
+    html=html+"</body>\n"
+    html=html+"</html>\n"
     return html
+
