@@ -51,7 +51,7 @@ Jinja2 intègre deux structures de contrôles: le for et le if.
 
 ### Bloc personnalisé
 
-Jinja2 permet d'intégrer des blocs personnalisés. Ces blocs sont souvent surchargés via un mécanisme d'heritage. Le recours à un mécanisme d'heritage permet d'éviter des recopies de codes inutiles.
+Jinja2 permet d'intégrer des blocs personnalisés. Ces blocs sont souvent surchargés via un mécanisme d'heritage. 
 
 ```
 {% block titre%} Mon Titre {% endblock %}
@@ -65,7 +65,7 @@ Un template peut hériter d'un autre template en ajoutant au début du fichier l
 {% extend "base.html" %}
 ```
 
-## Implémentation.
+## Implémentation
 
 Pour notre application, nous allons créer le contenu des pages html à partir de deux templates: `base.html`et `index.html`
 Pour intégrer ces templates à notre application, les fichiers doivent respecter une arborescence particulière. Plus précisement, le répertoire de votre projet doit être organisé de la manière suivante:
@@ -83,12 +83,12 @@ Le fichier `base.html` intègre le structure de base de chaque page html. Ce fic
 
 [import](./src/src3/templates/base.html)
 
-Le fichier `index.html` spécifie comment convertir une liste de contact, passée en entrée via une variable `contact_list`, en contenu html. Ce second fichier hérite de la structure du template `base.html`. En particulier, ce template rédefinit le contenu des blocs `titre` et `contenu`. Notons que pour construire les différentes lignes du tableau html, le template utilise une boucle `{% for ... in ... %}{% endfor %}`. 
+Le fichier `index.html` spécifie comment convertir une liste de contact, passée en entrée via une variable `contact_list`, en contenu html. Ce second fichier hérite de la structure du template `base.html`. En particulier, ce template surcharge le contenu des blocs `titre` et `contenu`. Notons que pour construire les différentes lignes du tableau html, le template utilise une boucle `{% for ... in ... %}{% endfor %}`. 
 
 [import](./src/src3/templates/index.html)
 
 
-### Flask (fichier server.py)
+### Application Web (fichier server.py)
 
 Pour utiliser nos templates Jinja2 avec notre application Flask, il faut préalablement importer la fonction `render_template` (`from flask import render_template`). La fonction `render_template` prend en entrée plusieurs arguments:
 
