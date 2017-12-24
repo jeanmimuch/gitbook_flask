@@ -1,9 +1,11 @@
 # Le micro framework Flask
 
-![version](https://img.shields.io/badge/flask-v0.12.2-brightgreen.svg)  
-![version](https://img.shields.io/badge/python-v3.4-brightgreen.svg)
+<div>
+<img src="https://img.shields.io/badge/flask-v0.12.2-brightgreen.svg"> 
+<img src="https://img.shields.io/badge/python-v3.4-brightgreen.svg">
+</div>
 
-![flask](http://flask.pocoo.org/static/logo/flask.svg)
+(http://flask.pocoo.org/static/logo/flask.svg)
 
 > Installation de Flask: `pip install flask`
 
