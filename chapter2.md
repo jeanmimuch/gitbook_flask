@@ -13,7 +13,7 @@ Dans cette première partie, nous allons afficher une liste de contacts stockés
 
 ## Pourquoi un framework web ?
 
-Lors du développement d'une application web, il faut gérer des fonctionnalités très diverses telles que la gestion des requêtes http, leur routage, les interactions avec la base de données, l'authentification des utilisateurs, la protection du site vis à vis des requêtes malveillantes, le renvoi de pages html, etc. Le codage de l'ensemble de ses fonctionnalités peut rapidement devenir complexe. Pour éviter de réinventer la roue, il est possible d'utiliser un framework web intégrant déjà l'ensemble de ses fonctionnalités.
+Lors du développement d'une application web, il faut gérer des fonctionnalités très diverses telles que la gestion des requêtes http, leur routage, les interactions avec la base de données, l'authentification des utilisateurs, la protection du site vis à vis des requêtes malveillantes, le renvoi de pages html, etc. Le codage de l'ensemble de ses fonctionnalités peut rapidement devenir complexe. Pour aller plus vite (et éviter de réinventer la roue), il est possible d'utiliser un framework web intégrant déjà l'ensemble de ses fonctionnalités.
 
 ## Premiers pas
 
