@@ -2,11 +2,43 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:chapter4.md">
+   </FileRef>
+   <FileRef
       location = "group:chapter3.md">
    </FileRef>
    <Group
       location = "group:src"
       name = "src">
+      <Group
+         location = "group:src4"
+         name = "src4">
+         <FileRef
+            location = "group:server.py">
+         </FileRef>
+         <Group
+            location = "group:templates"
+            name = "templates">
+            <FileRef
+               location = "group:base.html">
+            </FileRef>
+            <FileRef
+               location = "group:create.html">
+            </FileRef>
+            <FileRef
+               location = "group:delete.html">
+            </FileRef>
+            <FileRef
+               location = "group:index.html">
+            </FileRef>
+            <FileRef
+               location = "group:update.html">
+            </FileRef>
+            <FileRef
+               location = "group:form.html">
+            </FileRef>
+         </Group>
+      </Group>
       <Group
          location = "group:src2"
          name = "src2">

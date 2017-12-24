@@ -23,7 +23,7 @@ Pour créer un application web en Flask, nous allons créer un fichier `server.p
 
 [import](./src/src1/server.py)
 
-Les deux premières lignes perment d'importer la librairie Flask de créer votre application web. La 4ieme ligne indique que les requêtes pointant vers l'url "/" doivent être traitées par la fonction hello\_world. Ici, cette fonction va renvoyer la chaine "Hello, World!"
+Les deux premières lignes permettent d'importer la librairie Flask et de créer votre application web. La 4ieme ligne est un décorateur de fonction Python. Ce décorateur indique que les requêtes pointant vers l'url "/" doivent être traitées par la fonction hello\_world. Ici, cette fonction va renvoyer la chaine "Hello, World!"
 
 Pour lancer votre première application web, rien de plus simple.
 
@@ -50,6 +50,7 @@ Dans notre première implémentation, nous allons considérer que les contacts s
 Le programme suivant permet d'afficher les contacts dans un tableau html \(balise `<table>`\).
 
 [import](./src/src2/server.py)
+
 
 
 
