@@ -14,14 +14,14 @@
 
 Dans notre première implémentation du code, nous avons créer le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est possible de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire ne Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
 
-Concrêtement, un moteur de template permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un fichier avec une structure bien spécifique (html, xml, txt, tex). Tout comme d'autres langage de programmation, le moteur de template intègre certaines structures de contrôle de base. Le moteur de template possède également un mécanisme d'héritage permettant d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
+Concrêtement, un moteur de template permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un fichier avec une structure bien spécifique (html, xml, txt, tex).
 
 
 ## Le moteur Jinja2
 
 > Documentation: [Jinja2](http://jinja.pocoo.org/docs/2.10/)
 
-Le plus souvent Jinja2 est utilisé pour créer des pages au format html. Dans cette configuration, les templates sont stockés dans des fichiers html intègrant des **tags** particulier. 
+Le plus souvent Jinja2 est utilisé pour créer des pages au format html. Dans cette configuration, les templates sont stockés dans des fichiers html intègrant des **tags** particulier. Tout comme d'autres langage de programmation, Jinja2 intègre certaines structures de contrôle. Le moteur de template possède également un mécanisme d'héritage permettant d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
 
 ### Variables
 
@@ -76,7 +76,7 @@ server.py
     index.html
 ```
 
-### Templates (fichiers `base.html`et `index.html`)
+### Templates (fichiers base.html et index.html)
 
 Le fichier `base.html` intègre le structure de base de chaque page html. Ce fichier définit deux blocs nommée `titre` et `contenu`.
 
@@ -87,7 +87,7 @@ Le fichier `index.html` spécifie comment convertir une liste de contact, passé
 [import](./src/src3/templates/index.html)
 
 
-### Flask (fichier `server.py`)
+### Flask (fichier server.py)
 
 Pour utiliser nos templates Jinja2 avec notre application Flask, il faut préalablement importer la fonction `render_template` (`from flask import render_template`). La fonction `render_template` prend en entrée plusieurs arguments:
 

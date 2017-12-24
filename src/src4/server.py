@@ -10,30 +10,32 @@ contact_list=[{"nom":"Einstein","prenom":"Albert","tel":"06.00.00.00.00","mail":
 def index():
     return render_template("index.html",contact_list=contact_list)
 
-
 @app.route('/create', methods=['GET', 'POST'])
 def create():
-    return render_template("create.html")
+    
+    if request.method == "GET":
+        return render_template("create.html",contact=None)
+    
+    if request.method == "POST":
+        contact_list.append(request.form.to_dict())
+        return redirect(url_for("index"))
 
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def udpate(id):
-    contact=contact_list[id-1]
-    
-    if request.method == "POST":
-        contact={}
-        contact["nom"] = request.values.get("nom")
-        contact["prenom"] = request.values.get("prenom")
-        contact["mail"]=request.values.get("mail")
-        contact["tel"]=request.values.get("tel")
-        contact_list[id-1]=contact
-        return redirect(url_for("index"))
     
     if request.method == "GET":
-        contact=contact_list[id-1]
-        return render_template("update.html",contact=contact)
-
+        return render_template("update.html",contact=contact_list[id-1])
+    
+    if request.method == "POST":
+        contact_list[id-1]=request.form.to_dict()
+        return redirect(url_for("index"))
 
 @app.route('/delete/<int:id>', methods=['GET', 'POST'])
 def delete(id):
-    contact=contact_list[id-1]
-    return render_template("delete.html",contact=contact)
+    
+    if request.method == "GET":
+        return render_template("delete.html",contact=contact_list[id-1])
+
+    if request.method == "POST":
+        del contact_list[id-1]
+        return redirect(url_for("index"))
