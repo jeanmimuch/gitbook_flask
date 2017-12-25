@@ -12,20 +12,19 @@
 
 ## Pourquoi un moteur de templates ?
 
-Dans notre première implémentation du code, nous avons créer le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est possible de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire ne Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
+Dans notre première implémentation du code, nous avons créer le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est possible de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire en Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
 
-Concrêtement, un moteur de template permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un fichier avec une structure bien spécifique (html, xml, txt, tex).
 
 
 ## Le moteur Jinja2
 
 > La Documentation de Jinja2 est disponible à l'adresse: (http://jinja.pocoo.org/docs/2.10/)
 
-Les templates Jinja2 sont stockés dans des fichiers html intègrant des **tags** particuliers. Certains tags permettent notamment d'inclure des structures de contrôle. Le moteur de template possède également un mécanisme d'héritage permettant d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
+Un moteur de template permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un document avec une structure bien spécifique (html, xml, txt ou tex). Pour faire le lien entre les informations passées en entrée et le document, les templates intègrent des **tags** particuliers. Certains tags permettent notamment d'executer des structures de contrôle. Les templates peuvent également hériter de la structure d'autres templates. Cela permet notamment d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
 
 ### Variables
 
-L'affichage d'une variable passée en entrée s'obtient via la syntaxe
+Pour inclure le contenu d'une variable nommée `ma_variable` dans un document, il faut encapsuler le nom de la variable entre `{{.}}`
 
 ```
 {{ma_variable}}
@@ -62,7 +61,7 @@ Jinja2 permet d'intégrer des blocs personnalisés. Ces blocs sont souvent surch
 Un template peut hériter d'un autre template en ajoutant au début du fichier le tag
 
 ```
-{% extend "base.html" %}
+{% extends "base.html" %}
 ```
 
 ## Implémentation
