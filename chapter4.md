@@ -48,13 +48,13 @@ server.py
 
 #### index.html
 
-Le template `index.html` permet de lister l'ensemble des contacts dans un tableau html. Par rapport à notre version précédente, nous avons ajouté une colonne `action`. Cette colonne indique les urls à utiliser pour modifier ou supprimer un contact particulier. Ces urls se basent sur la variable `loop.index` pour identifier de manière unique un contact. 
+Le template `index.html` permet de lister l'ensemble des contacts dans un tableau html. Par rapport à notre version précédente, nous avons ajouté une colonne `action`. Cette colonne indique les urls à utiliser pour modifier ou supprimer un contact particulier. Ces urls utilisent la variable `loop.index` pour identifier de manière unique un contact. 
 
 [import](./src/src4/templates/index.html)
 
 #### form.html
 
-Le fichier `form.html` décrit le formulaire pour l'édition d'un contact. Ce formulaire utilise la méthode `post`. Les différents élements du formulaire sont initialisés via la variable `contact`.
+Le template `form.html` contient le formulaire permettant d'éditer les informations d'un contact. Ce formulaire utilise la méthode `post` pour transmettre les informations aux serveurs. Les différents élements du formulaire sont initialisés via la variable `contact`.
 
 [import](./src/src4/templates/form.html)
 
