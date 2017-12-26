@@ -13,6 +13,9 @@
    <FileRef
       location = "group:chapter4.md">
    </FileRef>
+   <FileRef
+      location = "group:chapter5.md">
+   </FileRef>
    <Group
       location = "group:src"
       name = "src">

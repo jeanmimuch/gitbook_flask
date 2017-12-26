@@ -51,7 +51,11 @@ Le programme suivant permet d'afficher les contacts dans un tableau html \(balis
 [import](./src/src2/server.py)
 
 
+## Résultat
 
+Le code complet est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src2). L'image ci dessous présente la première page de notre application.
+
+![Application de gestion de contacts](img/app1.png)
 
 
 

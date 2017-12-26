@@ -69,7 +69,7 @@ Les fichiers `create.html' et 'update.html' héritent du template `form.html`. C
 
 ## Résultat
 
-Le code complet est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src4). La vidéo ci dessous montre le resultat final.
+Le code complet est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src4). La vidéo ci dessous montre le fonctionnement de notre application.
  
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/CZIkn_bdoDg?rel=0" frameborder="0" allowfullscreen></iframe>
 
