@@ -18,21 +18,14 @@ Dans notre première implémentation, nous avons créé le code html de notre si
 
 ## Le moteur Jinja2
 
-> La Documentation de Jinja2 est disponible à l'adresse: (http://jinja.pocoo.org/docs/2.10/)
+> La Documentation de Jinja2 est disponible à l'adresse: (http://jinja.pocoo.org/docs/2.10/templates/)
 
 Le moteur de template Jinja2 permet, à partir de plusieurs informations passées en entrée, de construire un document avec une structure bien spécifique. Concrêtement, la construction d'un document html s'obtient à partir de deux fichiers.
 
 * Un script Python appelant la fonction `render_template` de Flask / Jinja2. Cette fonction est appelée avec deux paramètres: nom du template + informations à transmettre au template.
 * Un template html permettant la construction du document.
 
-Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. Certains tags permettent d'éxecuter des structures de contrôles (boucle et test conditionnel). D'autres tags permettent de mettre en place un mécanisme d'héritage de templates.
-
-* Tags liés aux structures de contrôles. 
-    * La boucle `{% for variable in list %} ... {% endfor %}`
-    * Le test `{% if variable %} ... {% else %} ... {% endif %}`
-* Tags liée à l'héritage de templates:
-    * Héritage de la structure d'un autre template (à indiquer en première ligne): `{% exten "fichier.html" %}`
-    * Définiton / Surcharge d'un bloc de code : {% block titre%} ... {% endblock %}
+Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. Certains tags permettent d'éxecuter des structures de contrôles (boucle et test conditionnel). D'autres tags permettent d'utiliser un mécanisme d'héritage de template.
 
 
 ## Implémentation
@@ -60,7 +53,7 @@ Le fichier `index.html` spécifie comment construire une page html à partir de 
 
 ### Application Flask 
 
-Pour utiliser nos templates Jinja2 avec notre application Flask, il faut préalablement importer la fonction `render_template` (`from flask import render_template`). La fonction `render_template` prend en entrée plusieurs arguments:
+Pour utiliser nos templates Jinja2 avec notre application Flask, nous devons préalablement importer la fonction `render_template` (`from flask import render_template`). La fonction `render_template` prend en entrée plusieurs arguments:
 
 * un template html disponible dans le repertoire `templates`.
 * une liste de variables à passer au template.
