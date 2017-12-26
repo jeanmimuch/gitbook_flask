@@ -43,7 +43,7 @@ server.py
 
 ### Fichier index.html
 
-[import](./src/src4/templates/index.html)
+[import,title=index.html](./src/src4/templates/index.html)
 
 ### Fichier form.html
 
