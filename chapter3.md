@@ -28,7 +28,7 @@ Le moteur de template Jinja2 permet, à partir de plusieurs informations passée
 Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. 
 
 * Tags liés aux structures de contrôles. 
-    * La boucle `{% for variable in . %} ... {% endfor %}`
+    * La boucle `{% for variable in list %} ... {% endfor %}`
     * Le test `{% if variable %} ... {% else %} ... {% endif %}`
 * Tags liée à l'héritage de templates:
     * Héritage de la structure d'un autre template (à indiquer en première ligne): `{% extends "base.html" %}`
