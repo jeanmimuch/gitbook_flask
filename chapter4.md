@@ -66,7 +66,7 @@ Les fichiers `create.html` et `update.html` héritent du template `form.html`. C
 
 [import](./src/src4/templates/update.html)
 
-#### Fichier delete.html
+#### delete.html
 
 Le fichier `delete.html` contient un formulaire permettant à l'utilisateur de confirmer la suppression d'un contact.
 

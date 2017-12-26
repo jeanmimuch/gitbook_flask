@@ -9,7 +9,6 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" height="150" style="padding-bottom: 20px;"/>
 </div>
 
-## Pourquoi une base de données ?
 
 Actuellement, notre application utilise une liste Python pour stocker les informations. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues. En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En utilisant cette organisation, nous respectons une fois de plus le célèbre Separation of Concerns: Flask pour le traitement des informations, Jinja2 pour la gestion des templates et SQLite pour le stockage des données.
 
@@ -19,17 +18,32 @@ Actuellement, notre application utilise une liste Python pour stocker les inform
 SQLite est une librairie logicielle implémentant un moteur de base de données SQL.
 
 
-## Implémentation
+## Quatrième Implémentation
 
-### Creation de la base de données
+Dans notre quatrième implémentation, nous allons considérer l'organisation de fichiers suivante:
 
-Depuis votre terminal, il est possible de créer une base de données SQLite via la commande sqlite3.
+```
+server.py
+data.db
+/templates
+    base.html
+    index.html
+    form.html
+    create.html
+    update.html
+    delete.html
+```
+
+
+### Fichier data.db
+
+Depuis votre terminal, nous allons créer une base de données SQLite via la commande:
 
 ```
 $ sqlite3 data.db
 ```
 
-Pour notre application, nous allons créer une table contact contenant plusieurs élèments.
+Nous allons ensuite créer une table `contact` contenant plusieurs champs.
 
 ```
 sqlite> CREATE TABLE contact(
@@ -50,19 +64,19 @@ sqlite> INSERT INTO CONTACT (nom,prenom,mail,tel)
                 ("Fourier","Joseph","joseph@maserie.fr","09.00.03.00.01");
 ```
 
-Pour vérifier que tout s'est bien passé, il est possible de lister l'ensemble des élements contenus dans la table CONTACT via la commande
+Pour vérifier que tout s'est bien passé, il est possible de lister l'ensemble des élements de la table `contact` via la commande
 
 ```
 SELECT * FROM contact;
 ```
 
-Finalement pour quitter sqlite3, il suffit de lancer la commande `.exit`.
+La commande `.exit` permet de quitter l'invite de commande sqlite3.
 
 ### Modification des Templates
 
 Dans notre première implémentation, les urls permettant de modifier ou de supprimer les enregistrements étaient basées sur l'indexation de la liste `contact_list`. Nous allons maintenant utiliser le champ `ìd` de la table `contact`. Pour réaliser cette modification, notre template `ìndex.html` doit être remplacé par le template suivant
 
-[import](./src/src5/templates/index.html)
+[import:21-22](./src/src5/templates/index.html)
 
 ### Modification du fichier `server.py`
 
