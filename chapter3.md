@@ -10,13 +10,10 @@
 </div>
 
 
-## Pourquoi un moteur de templates ?
-
 Dans notre première implémentation, nous avons créé le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est préférable de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire en Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
 
 
-
-## Le moteur Jinja2
+## Principe
 
 > La Documentation de Jinja2 est disponible à l'adresse: (http://jinja.pocoo.org/docs/2.10/templates/)
 
@@ -28,7 +25,7 @@ Le moteur de template Jinja2 permet, à partir de plusieurs informations passée
 Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. Certains tags permettent d'éxecuter des structures de contrôles (boucle et test conditionnel). D'autres tags permettent d'utiliser un mécanisme d'héritage de template.
 
 
-## Implémentation
+## Seconde Implémentation
 
 Pour notre application, nous allons créer le contenu des pages html à partir de deux templates: `base.html`et `index.html`
 Pour intégrer ces templates à notre application, les fichiers doivent respecter une arborescence particulière. Plus précisement, le répertoire de notre projet doit être organisé de la manière suivante:
