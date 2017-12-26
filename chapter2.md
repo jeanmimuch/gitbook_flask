@@ -10,9 +10,10 @@
 
 Lors du développement d'une application web, il faut gérer des fonctionnalités très diverses telles que la gestion des requêtes http, leur routage, les interactions avec la base de données, l'authentification des utilisateurs, la protection du site vis à vis des requêtes malveillantes, le renvoi de pages html, etc. Le codage de l'ensemble de ses fonctionnalités peut rapidement devenir complexe. Pour aller plus vite (et éviter de réinventer la roue), il est préférable d'utiliser un framework web intégrant déjà l'ensemble de ses fonctionnalités.
 
-## Hello World 
+## Principe 
 
-> Installation de Flask: `pip install flask`
+> La Documentation de Flask est disponible à l'adresse: (http://flask.pocoo.org/docs/0.12/)
+
 
 Flask est un framework web très léger. Pour développer une application web en Flask, il suffit de coder un fichier Python spécifiant:
 * comment router les requêtes des clients (via le décorateur `@app.route(.)`)

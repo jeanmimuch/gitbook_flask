@@ -10,10 +10,12 @@
 </div>
 
 
-Actuellement, notre application utilise une liste Python pour stocker les informations. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues. En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En utilisant cette organisation, nous respectons une fois de plus le célèbre Separation of Concerns: Flask pour le traitement des informations, Jinja2 pour la gestion des templates et SQLite pour le stockage des données.
-
+Actuellement, notre application utilise une liste Python pour stocker les informations. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues. En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En plus du stockage persistant, les base de données permettent d'effectuer des requêtes complexes pour rechercher des élements via la langage SQL.
 
 ## Le moteur SQLite
+
+> La Documentation de SQLite3 est disponible à l'adresse: (https://www.sqlite.org/index.html)
+
 
 SQLite est une librairie logicielle implémentant un moteur de base de données SQL.
 
