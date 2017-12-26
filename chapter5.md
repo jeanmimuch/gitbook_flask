@@ -83,6 +83,8 @@ Dans notre première implémentation, les urls permettant de modifier ou de supp
 
 ### Modification du fichier `server.py`
 
+Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src5).
+
 [import](./src/src5/server.py)
 
 
