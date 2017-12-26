@@ -47,7 +47,7 @@ server.py
     index.html
 ```
 
-### Templates (fichiers base.html et index.html)
+### Templates HTML
 
 Le fichier `base.html` intègre le structure de base de chaque page html. Ce fichier définit deux blocs nommée `titre` et `contenu`.
 
@@ -58,14 +58,14 @@ Le fichier `index.html` spécifie comment construire une page html à partir de 
 [import](./src/src3/templates/index.html)
 
 
-### Application Web (fichier server.py)
+### Application Flask 
 
 Pour utiliser nos templates Jinja2 avec notre application Flask, il faut préalablement importer la fonction `render_template` (`from flask import render_template`). La fonction `render_template` prend en entrée plusieurs arguments:
 
 * un template html disponible dans le repertoire `templates`.
 * une liste de variables à passer au template.
 
-Le programme suivant montre comment intégrer les templates `base.html` et `index.html` à notre application. Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src3).
+Le programme suivant montre comment intégrer les templates `base.html` et `index.html` dans notre application Flask. Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src3).
 
 [import](./src/src3/server.py)
 
