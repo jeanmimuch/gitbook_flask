@@ -25,7 +25,7 @@ Pour vérifier que Flask est bien installé, nous allons tout d'abord créer une
 
 [import](./src/src1/server.py)
 
-Les deux premières lignes permettent d'importer la librairie Flask et de créer votre application web. La 4ieme ligne est un décorateur  Python. Ce décorateur indique que les requêtes pointant vers l'url "/" doivent être traitées par la fonction `hello\_world`. Ici, cette fonction renvoie la chaine de caractères "Hello, World!"
+Les deux premières lignes permettent d'importer la librairie Flask et de créer votre application web. La 4ieme ligne est un décorateur  de fonction Python. Un décorateur de fonction est une fonction qui modifie le comportement d'une autre fonction. Ici, ce décorateur indique que les requêtes pointant vers l'url "/" doivent être traitées par la fonction `hello\_world`. La fonction `hello\_world` renvoie ici simplement la chaine de caractères "Hello, World!"
 
 Pour lancer notre première application web, rien de plus simple !
 
@@ -49,9 +49,9 @@ Si tout fonctionne bien, la page web doit alors afficher la chaine "Hello, World
 
 ## Première implémentation
 
-Pour implémenter notre application, nous allons considérer que les contacts sont stockés dans une liste python nommée `contact_list`. Nous initialiserons cette liste dans le fichier `server.py`.
+Pour implémenter notre application, nous allons considérer que les contacts sont stockés dans une liste python nommée `contact_list`. Cette liste sera initialisée directement dans le fichier `server.py`.
 
-Le programme suivant permet d'afficher les contacts dans un tableau html \(balise `<table>`\).
+Dans notre premier version de notre application, nous allons uniquement router l'url "/" vers une fonction `index()`. La fonction `index()` devra ensuite construire un tableau HTML (balise `<table>`) listant l'ensemble des élements contenus dans la variable `contact_list`.
 
 [import](./src/src2/server.py)
 

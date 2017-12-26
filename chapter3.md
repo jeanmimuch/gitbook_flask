@@ -12,7 +12,7 @@
 
 ## Pourquoi un moteur de templates ?
 
-Dans notre première implémentation du code, nous avons créer le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est préférable de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire en Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
+Dans notre première implémentation, nous avons créé le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est préférable de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire en Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
 
 
 
@@ -20,54 +20,25 @@ Dans notre première implémentation du code, nous avons créer le code html de 
 
 > La Documentation de Jinja2 est disponible à l'adresse: (http://jinja.pocoo.org/docs/2.10/)
 
-Le moteur de template Jinja2 permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un document avec une structure bien spécifique. Le plus souvent, les documents générés sont de type html, xml, txt ou tex. Pour faire le lien entre les informations passées en entrée et le document, Jinja2 intègre des **tags** particuliers. Certains tags permettent d'executer des structures de contrôle. Les templates peuvent également hériter de la structure d'autres templates. Ces mécanismes permettent d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
+Le moteur de template Jinja2 permet, à partir de plusieurs informations passées en entrée, de construire un document avec une structure bien spécifique. Concrêtement, la construction d'un document html s'obtient à partir de deux fichiers.
 
-### Variables
+* Un script Python appelant la fonction `render_template` de Flask / Jinja2. Cette fonction est appelée avec deux paramètres: nom du template + informations à transmettre au template.
+* Un template html permettant la construction du document.
 
-Pour inclure le contenu d'une variable nommée `ma_variable` dans un document, il faut encapsuler le nom de la variable entre `{{.}}`
+Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. 
 
-```
-{{ma_variable}}
-```
+* Tags liés aux structures de contrôles. 
+    * La boucle `{% for variable in . %} ... {% endfor %}`
+    * Le test `{% if variable %} ... {% else %} ... {% endif %}`
+* Tags liée à l'héritage de templates:
+    * Héritage de la structure d'un autre template (à indiquer en première ligne): `{% extends "base.html" %}`
+    * Définiton / Surcharge d'un bloc de code : {% block titre%} ... {% endblock %}
 
-### Structures de contrôle
-
-Jinja2 intègre deux structures de contrôles: le for et le if. 
-
-```
-{% for variable in variable_list %}
-    Ma variable {{variable}}
-{% endfor %}
-```
-
-```
-{% if ma_variable %}
-    La variable est égale à {{ma_variable}}
-{% else %}
-    La variable n'existe pas
-{% endif %}
-```
-
-### Bloc personnalisé
-
-Jinja2 permet d'intégrer des blocs personnalisés. Ces blocs sont souvent surchargés via un mécanisme d'heritage. 
-
-```
-{% block titre%} Mon Titre {% endblock %}
-```
-
-### Héritage
-
-Un template peut hériter d'un autre template en ajoutant au début du fichier le tag
-
-```
-{% extends "base.html" %}
-```
 
 ## Implémentation
 
 Pour notre application, nous allons créer le contenu des pages html à partir de deux templates: `base.html`et `index.html`
-Pour intégrer ces templates à notre application, les fichiers doivent respecter une arborescence particulière. Plus précisement, le répertoire de votre projet doit être organisé de la manière suivante:
+Pour intégrer ces templates à notre application, les fichiers doivent respecter une arborescence particulière. Plus précisement, le répertoire de notre projet doit être organisé de la manière suivante:
 
 ```
 server.py
@@ -82,7 +53,7 @@ Le fichier `base.html` intègre le structure de base de chaque page html. Ce fic
 
 [import](./src/src3/templates/base.html)
 
-Le fichier `index.html` spécifie comment convertir une liste de contact, passée en entrée via une variable `contact_list`, en contenu html. Ce second fichier hérite de la structure du template `base.html`. En particulier, ce template surcharge le contenu des blocs `titre` et `contenu`. Notons que pour construire les différentes lignes du tableau html, le template utilise une boucle `{% for ... in ... %}{% endfor %}`. 
+Le fichier `index.html` spécifie comment construire une page html à partir de la liste `contact_list` passée en entrée. Ce second fichier hérite de la structure du template `base.html`. En particulier, ce template surcharge le contenu des blocs `titre` et `contenu`. Notons que pour construire les différentes lignes du tableau html, le template utilise une boucle `{% for ... in ... %}{% endfor %}`. 
 
 [import](./src/src3/templates/index.html)
 
@@ -94,8 +65,7 @@ Pour utiliser nos templates Jinja2 avec notre application Flask, il faut préala
 * un template html disponible dans le repertoire `templates`.
 * une liste de variables à passer au template.
 
-Le programme suivant montre comment intégrer les templates `base.html` et `index.html` (voir partie précédente) à notre première version de l'application.
+Le programme suivant montre comment intégrer les templates `base.html` et `index.html` à notre application. Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src3).
 
 [import](./src/src3/server.py)
 
-Le code complet est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src3).
