@@ -43,7 +43,9 @@ $ * Serving Flask app "server"
 $ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-1. Pour tester votre application, ouvrez votre navigateur internet à l'adresse spécifiée par Flask (ici `http://127.0.0.1:5000/`). 
+2. Pour tester votre application, ouvrez votre navigateur internet à l'adresse spécifiée par Flask (ici `http://127.0.0.1:5000/`). 
+
+Si tout fonctionne bien, la page web doit alors afficher la chaine "Hello, World!".
 
 ## Première implémentation
 
