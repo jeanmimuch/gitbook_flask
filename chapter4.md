@@ -54,7 +54,7 @@ Le template `index.html` permet de lister l'ensemble des contacts dans un tablea
 
 #### form.html
 
-Le template `form.html` contient le formulaire permettant d'éditer les informations d'un contact. Ce formulaire utilise la méthode `post` pour transmettre les informations aux serveurs. Les différents élements du formulaire sont initialisés via la variable `contact`.
+Le template `form.html` contient un formulaire permettant d'éditer les informations d'un contact. Ce formulaire utilise la méthode `post` pour transmettre les informations aux serveurs. Les différents élements du formulaire sont initialisés via la variable `contact`.
 
 [import](./src/src4/templates/form.html)
 
@@ -68,15 +68,17 @@ Les fichiers `create.html` et `update.html` héritent du template `form.html`. C
 
 #### Fichier delete.html
 
+Le fichier `delete.html` contient un formulaire permettant à l'utilisateur de confirmer la suppression d'un contact.
+
 [import](./src/src4/templates/delete.html)
 
-### Application Web (fichier server.py)
+### Application Flask
+
+Pour gérer la consultation et l'édition des informations, notre fichier `server.py` intègre trois nouveaux décorateurs de fonctions . Les fonctions `create`, `update`, `delete` gèrent à la fois le traitement des requêtes `get` (envoi des formulaires au client) que le traitement des requêtes `post` (modification des informations au niveau du serveur). Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `ìd`. Ce paramètre permet d'identifier de manière unique un contact.
 
 [import](./src/src4/server.py)
 
-## Résultat
-
-Le code complet est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src4). La vidéo ci dessous illustre le fonctionnement de notre application.
+Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src4). La vidéo présentée ci dessous illustre le fonctionnement de notre application.
  
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/CZIkn_bdoDg?rel=0" frameborder="0" allowfullscreen></iframe>
 
