@@ -5,7 +5,7 @@ Ce tutoriel décrit la procédure pour réaliser une application web en python. 
 ## Objectif
 
 Dans ce tutoriel, nous allons coder une application web permettant de gérer une liste de contact. 
-La vidéo présentée ci-dessous illustre le rendu finale de notre application.
+La vidéo présentée ci-dessous illustre le rendu final de notre application.
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/3TWU1YbLeGA?rel=0" frameborder="0" allowfullscreen></iframe>
 
