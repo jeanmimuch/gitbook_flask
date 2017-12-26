@@ -6,9 +6,11 @@
 </div>
 
 <div style="text-align:center;">
-<img src="http://jinja.pocoo.org/docs/2.10/_static/jinja-small.png" height="150" style="padding-bottom: 20px;"/>
+<img src="http://jinja.pocoo.org/docs/2.10/_static/jinja-small.png" height="150" />
 </div>
 
+
+## Contexte
 
 Dans notre première implémentation, nous avons créé le code html de notre site directement dans notre code Python. En pratique, le fait de mixer du code html avec du code Python peut rapidement devenir fastidieux. Pour éviter ce problème, il est préférable de sous-traiter la conception des pages à un moteur de template comme Jinja2 (le plus populaire en Python). A chacun son rôle, Flask pour le traitement des informations et Jinja2 pour la création des pages. En adoptant cette approche, nous respectons un principe de base de la programmation: le celèbre **Separation of Concerns**.
 

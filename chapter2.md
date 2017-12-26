@@ -5,8 +5,10 @@
 </div>
 
 <div style="text-align:center;">
-<img src="http://flask.pocoo.org/static/logo/flask.svg" height="150" style="padding-bottom: 20px;"/>
+<img src="http://flask.pocoo.org/static/logo/flask.svg" height="150" />
 </div>
+
+## Contexte
 
 Lors du développement d'une application web, il faut gérer des fonctionnalités très diverses telles que la gestion des requêtes http, leur routage, les interactions avec la base de données, l'authentification des utilisateurs, la protection du site vis à vis des requêtes malveillantes, le renvoi de pages html, etc. Le codage de l'ensemble de ses fonctionnalités peut rapidement devenir complexe. Pour aller plus vite (et éviter de réinventer la roue), il est préférable d'utiliser un framework web intégrant déjà l'ensemble de ses fonctionnalités.
 
