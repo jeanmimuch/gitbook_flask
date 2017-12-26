@@ -5,7 +5,7 @@
 </div>
 
 <div style="text-align:center;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" height="150"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" height="150" style="padding-bottom: 20px;"/>
 </div>
 
 Dans toutes les applications informatiques de gestion, l'utilisateur peut consulter des informations mais également, si il en a l'autorisation, les éditer (création, modification ou suppression). Pour éditer ces informations, l'utilisateur (client) doit renvoyer un formulaire HTML5 au serveur.

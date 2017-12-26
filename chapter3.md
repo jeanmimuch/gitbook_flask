@@ -6,7 +6,7 @@
 </div>
 
 <div style="text-align:center;">
-<img src="http://jinja.pocoo.org/docs/2.10/_static/jinja-small.png" height="150"/>
+<img src="http://jinja.pocoo.org/docs/2.10/_static/jinja-small.png" height="150" style="padding-bottom: 20px;"/>
 </div>
 
 

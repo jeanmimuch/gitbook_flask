@@ -6,7 +6,7 @@
 </div>
 
 <div style="text-align:center;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" height="150"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" height="150" style="padding-bottom: 20px;"/>
 </div>
 
 ## Pourquoi une base de données ?
