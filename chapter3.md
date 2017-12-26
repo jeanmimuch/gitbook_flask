@@ -25,13 +25,13 @@ Le moteur de template Jinja2 permet, à partir de plusieurs informations passée
 * Un script Python appelant la fonction `render_template` de Flask / Jinja2. Cette fonction est appelée avec deux paramètres: nom du template + informations à transmettre au template.
 * Un template html permettant la construction du document.
 
-Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. 
+Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. Certains tags permettent d'éxecuter des structures de contrôles (boucle et test conditionnel). D'autres tags permettent de mettre en place un mécanisme d'héritage de templates.
 
 * Tags liés aux structures de contrôles. 
     * La boucle `{% for variable in list %} ... {% endfor %}`
     * Le test `{% if variable %} ... {% else %} ... {% endif %}`
 * Tags liée à l'héritage de templates:
-    * Héritage de la structure d'un autre template (à indiquer en première ligne): `{% extends "fichier.html" %}`
+    * Héritage de la structure d'un autre template (à indiquer en première ligne): `{% exten "fichier.html" %}`
     * Définiton / Surcharge d'un bloc de code : {% block titre%} ... {% endblock %}
 
 
