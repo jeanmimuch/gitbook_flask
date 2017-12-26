@@ -16,9 +16,87 @@
    <FileRef
       location = "group:chapter5.md">
    </FileRef>
+   <FileRef
+      location = "group:chapter6.md">
+   </FileRef>
    <Group
       location = "group:src"
       name = "src">
+      <Group
+         location = "group:src6"
+         name = "src6">
+         <Group
+            location = "group:__pycache__"
+            name = "__pycache__">
+            <FileRef
+               location = "group:server.cpython-34.pyc">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:data.db">
+         </FileRef>
+         <FileRef
+            location = "group:server.py">
+         </FileRef>
+         <Group
+            location = "group:templates"
+            name = "templates">
+            <FileRef
+               location = "group:base.html">
+            </FileRef>
+            <FileRef
+               location = "group:create.html">
+            </FileRef>
+            <FileRef
+               location = "group:delete.html">
+            </FileRef>
+            <FileRef
+               location = "group:form.html">
+            </FileRef>
+            <FileRef
+               location = "group:index.html">
+            </FileRef>
+            <FileRef
+               location = "group:update.html">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:src5"
+         name = "src5">
+         <Group
+            location = "group:__pycache__"
+            name = "__pycache__">
+            <FileRef
+               location = "group:server.cpython-34.pyc">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:server.py">
+         </FileRef>
+         <Group
+            location = "group:templates"
+            name = "templates">
+            <FileRef
+               location = "group:base.html">
+            </FileRef>
+            <FileRef
+               location = "group:create.html">
+            </FileRef>
+            <FileRef
+               location = "group:delete.html">
+            </FileRef>
+            <FileRef
+               location = "group:form.html">
+            </FileRef>
+            <FileRef
+               location = "group:index.html">
+            </FileRef>
+            <FileRef
+               location = "group:update.html">
+            </FileRef>
+         </Group>
+      </Group>
       <Group
          location = "group:src4"
          name = "src4">
