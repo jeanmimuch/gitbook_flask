@@ -1,4 +1,14 @@
-# Gestion des formulaires
+# Les formulaires HTML5
+
+<div>
+<img src="https://img.shields.io/badge/HTML-v5-brightgreen.svg"> 
+</div>
+
+<div style="text-align:center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" height="150"/>
+</div>
+
+## Pourquoi des formulaires ?
 
 Dans toutes les applications informatiques de gestion, le client peut consulter des informations mais également, si il en a l'autorisation, les éditer. L'ensemble des opérations réalisables est souvent désigné sous l'acronyme **CRUD** (Create Read Update Delete). Dans cette partie, nous allons apprendre à gérer ces opérations avec le framework Flask. Contrêtement, la gestion de ces opérations va nécessiter deux ajouts.
 
