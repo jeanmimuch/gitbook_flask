@@ -31,7 +31,7 @@ Pour construire un document à partir des informations passées en entrée, Jinj
     * La boucle `{% for variable in list %} ... {% endfor %}`
     * Le test `{% if variable %} ... {% else %} ... {% endif %}`
 * Tags liée à l'héritage de templates:
-    * Héritage de la structure d'un autre template (à indiquer en première ligne): `{% extends "base.html" %}`
+    * Héritage de la structure d'un autre template (à indiquer en première ligne): `{% extends "fichier.html" %}`
     * Définiton / Surcharge d'un bloc de code : {% block titre%} ... {% endblock %}
 
 
