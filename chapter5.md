@@ -1,5 +1,14 @@
 # Gestion de la base de données.
 
+<div>
+<img src="https://img.shields.io/badge/sqlite-v3.13-brightgreen.svg"> 
+</div>
+
+<div style="text-align:center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" height="150"/>
+</div>
+
+
 Actuellement, notre application utilise une liste Python pour stocker les informations. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues (pas vraiment pratique !). En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En utilisant cette organisation, nous respectons une fois de plus le célèbre Separation of Concerns: Flask pour le traitement des informations, Jinja2 pour la gestion des templates et SQLite pour le stockage des données.
 
 

@@ -5,3 +5,4 @@
 3. [Le framework Flask](chapter2.md)
 4. [Le moteur de template Jinja2](chapter3.md)
 5. [Gestion des formulaires](chapter4.md)
+5. [Gestion de la base de données](chapter5.md)
