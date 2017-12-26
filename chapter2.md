@@ -17,9 +17,11 @@ Lors du développement d'une application web, il faut gérer des fonctionnalité
 
 > Installation de Flask: `pip install flask`
 
-Flask est un framework très léger. Pour développer une application web en Flask, il suffit de coder un fichier Python spécifiant comment router les requêtes des clients et comment les traiter.
+Flask est un framework web très léger. Pour développer une application web en Flask, il suffit de coder un fichier Python spécifiant:
+* comment router les requêtes des clients (via le décorateur `@app.route(.)`)
+* comment traiter les requêtes après routage (via une fonction Python).
 
-Pour vérifier que Flask est bien installé, nous allons tout d'abord créer une application `server.py` permettant d'afficher dans une page Web "Hello World". Dans un fichier nommé `server.py`, nous allons inscrire le code Python suivant:
+Pour vérifier que Flask est bien installé, nous allons tout d'abord créer une application `server.py` permettant d'afficher dans une page Web  la chaîne de caractères "Hello World". Pour y arriver, nous allons inscrire le code Python suivant dans un fichier nommé `server.py`.
 
 [import](./src/src1/server.py)
 

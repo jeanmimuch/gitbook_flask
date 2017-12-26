@@ -14,9 +14,9 @@ Pour programmer une application web, il est donc nécessaire de programmer conjo
     * HTML: Gestion du fond (contenu)
     * CSS: Gestion de la forme (apparence graphique)
     * JS: Gestion des interactions.
-* Côté serveur. Le traitement des informations peut être gêré par quasiment tous les langages de programmation. Toutefois, certains langages se sont démarqués en proposant des Frameworks spécialisés pour le web. Par exemple, citons le PHP (framework: Laravel ou Symfony), le Ruby (framework: ruby on rails) ou bien le Python. 
+* Côté serveur. Le traitement des informations peut être gêré par quasiment tous les langages de programmation. Toutefois, certains langages se sont démarqués en proposant des Frameworks spécialisés pour le web (Laravel, Symfony, Ruby on Rails, Django, Flask, ...). 
 
-Dans ce tutoriel, nous allons utiliser le langage Python pour programmer les traitements de notre serveur. Par rapport aux langages PHP et Ruby, le Python possède une incroyable polyvalence. 
+Dans ce tutoriel, nous allons utiliser le langage Python pour programmer les traitements de notre serveur.
 
 ## Frameworks Python
 
@@ -27,7 +27,7 @@ Il existe plusieurs Framework web pour le langage Python.
 * Tornado: [14000 stars](https://github.com/tornadoweb/tornado) sur Github
 * Pyramid: [2500 stars](https://github.com/Pylons/pyramid) sur Github
 
-Les deux frameworks les plus utilisés sont Django et Flask. Ces deux frameworks sont toutefois très différents dans l'esprit. Django est un framework très complet qui intégre un grand nombre de fonctionnalités. Ce framework est utilisé entre autre par Instagram ou par Pinterest. A l'inverse, Flask est un framework beaucoup plus minimal. Ce micro-framework n'intègre que les fonctionnalités de base. Cependant ne vous trompez pas, Flask permet le developpement d'application web relativement complexe.
+Les deux frameworks les plus utilisés sont Django et Flask. Dans l'esprit, ces deux frameworks sont toutefois très différents . Django est un framework très complet qui intégre un grand nombre de fonctionnalités. Ce framework est utilisé entre autre par Instagram ou par Pinterest. A l'inverse, Flask est un framework beaucoup plus minimal. Ce micro-framework n'intègre que les fonctionnalités de base. Cependant ne vous trompez pas, Flask permet le developpement d'applications web déjà relativement complexes.
 
 
 
