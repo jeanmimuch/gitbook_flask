@@ -57,7 +57,7 @@ sqlite> CREATE TABLE contact(
             tel TEXT NOT NULL);
 ```
 
-Une fois que la table CONTACT a été crée, nous pouvons y ajouter des élements via la syntaxe `INSERT INTO ... VALUES ...'.
+Une fois que la table `contact` a été crée, nous pouvons y ajouter des élements via la syntaxe `INSERT INTO ... VALUES ...`.
 
 ```
 sqlite> INSERT INTO CONTACT (nom,prenom,mail,tel)
