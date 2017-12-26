@@ -2,10 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:chapter4.md">
+      location = "group:chapter1.md">
+   </FileRef>
+   <FileRef
+      location = "group:chapter2.md">
    </FileRef>
    <FileRef
       location = "group:chapter3.md">
+   </FileRef>
+   <FileRef
+      location = "group:chapter4.md">
    </FileRef>
    <Group
       location = "group:src"
@@ -96,12 +102,6 @@
       location = "group:img"
       name = "img">
    </Group>
-   <FileRef
-      location = "group:chapter1.md">
-   </FileRef>
-   <FileRef
-      location = "group:chapter2.md">
-   </FileRef>
    <FileRef
       location = "group:README.md">
    </FileRef>

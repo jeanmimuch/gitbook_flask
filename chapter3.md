@@ -20,7 +20,7 @@ Dans notre première implémentation du code, nous avons créer le code html de 
 
 > La Documentation de Jinja2 est disponible à l'adresse: (http://jinja.pocoo.org/docs/2.10/)
 
-Un moteur de template permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un document avec une structure bien spécifique (html, xml, txt ou tex). Pour faire le lien entre les informations passées en entrée et le document, les templates intègrent des **tags** particuliers. Certains tags permettent notamment d'executer des structures de contrôle. Les templates peuvent également hériter de la structure d'autres templates. Cela permet notamment d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
+Le moteur de template Jinja2 permet à partir de plusieurs informations passées en entrée (dictionnaire Python par exemple) de construire un document avec une structure bien spécifique. Le plus souvent, les documents générés sont de type html, xml, txt ou tex. Pour faire le lien entre les informations passées en entrée et le document, Jinja2 intègre des **tags** particuliers. Certains tags permettent d'executer des structures de contrôle. Les templates peuvent également hériter de la structure d'autres templates. Ces mécanismes permettent d'éviter les répétitions de codes et de respecter le dogmatique **Don't Repeat Yourself**.
 
 ### Variables
 

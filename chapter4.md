@@ -24,7 +24,7 @@ Nom: <input type="text" name="nom">
 
 La balise `<form>` contient plusieurs attributs:
 * L'attribut `action` indique à quelle adresse les données seront envoyées. En indiquant la valeur `"#"`, les données sont renvoyées à la même adresse.
-* L'attribut `method` indique comment les données seront envoyées. Il existe deux methodes possibles: `get`et `post`. En utilisant la méthode `get`, les données seront envoyées via l'url. En utilisant la méthode `post`, les données seront envoyées dans le corps de la requête. En règle générale, il est recommandé d'utiliser la méthode `post` pour éviter de rendre visible les données des clients.
+* L'attribut `method` indique comment les données seront envoyées. Il existe deux methodes possibles: `get`et `post`. En utilisant la méthode `get`, les données seront envoyées via l'url. En utilisant la méthode `post`, les données seront envoyées dans le corps de la requête (méthode recommandée). 
 
 ## Templates HTML
 
@@ -43,17 +43,19 @@ server.py
 
 ### Fichier index.html
 
-[import,title="index.html"](./src/src4/templates/index.html)
+[import](./src/src4/templates/index.html)
 
 ### Fichier form.html
 
+Le fichier `form.html` décrit le formulaire pour l'édition d'un contact. Ce formulaire utilise la méthode `post` et revoie les données à la même adresse. Notons que les différents élements sont initialisés via la variable `contact`.
+
 [import](./src/src4/templates/form.html)
 
-### Fichier create.html
+### Fichiers create.html et update.html
+
+Les fichiers `create.html' et 'update.html' héritent du template `form.html`. Ces deux fichiers surchargent simplement le bloc `title`.
 
 [import](./src/src4/templates/create.html)
-
-### Fichier update.html
 
 [import](./src/src4/templates/update.html)
 
@@ -65,5 +67,9 @@ server.py
 
 [import](./src/src4/server.py)
 
+## Résultat
+
+Le code complet est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src4). La vidéo ci dessous montre le resultat final.
+ 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/CZIkn_bdoDg?rel=0" frameborder="0" allowfullscreen></iframe>
 
