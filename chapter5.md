@@ -74,7 +74,7 @@ La commande `.exit` permet de quitter l'invite de commande sqlite3.
 
 ### Modification des Templates
 
-Dans notre première implémentation, les urls permettant de modifier ou de supprimer les enregistrements étaient basées sur l'indexation de la liste `contact_list`. Nous allons maintenant utiliser le champ `ìd` de la table `contact`. Pour réaliser cette modification, notre template `ìndex.html` doit être remplacé par le template suivant
+Dans notre première implémentation, les urls permettant de modifier ou de supprimer les enregistrements étaient basées sur l'indexation de la liste `contact_list`. Nous allons maintenant utiliser le champ `ìd` de la table `contact`. Pour réaliser cette modification, nous devons remplacer le template `ìndex.html` par le template suivant
 
 [import:21-22](./src/src5/templates/index.html)
 
