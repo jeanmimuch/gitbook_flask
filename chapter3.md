@@ -49,17 +49,12 @@ Pour éviter des répétitions entre templates, il est possible de recourir à u
 {% extends 'base.html' %} 
 ```
 
-Lors d
+Lors de l'héritage, certains blocs de codes peuvent être surchargés. Ces blocs sont définis via le tag
 
-
-Ainsi, il 
 
 ```
 {% block mon_block %} ... {% endblock %}
 ```
-
-
-Certains tags permettent d'éxecuter des structures de contrôles (boucle et test conditionnel). D'autres tags permettent d'utiliser un mécanisme d'héritage de template.
 
 
 ## Seconde Implémentation
