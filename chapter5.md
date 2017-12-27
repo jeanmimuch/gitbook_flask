@@ -11,14 +11,40 @@
 
 ## Contexte
 
-Actuellement, notre application utilise une liste Python pour stocker les informations. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues. En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En plus du stockage persistant, comme son nom l'indique, les bases de données SQLite gèrent la gestion des requêtes SQL.
+Actuellement, notre application utilise une liste Python pour stocker les informations. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues. En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En plus du stockage persistant, le moteur SQLite gèrent également la gestion des requêtes SQL.
 
 ## Le moteur SQLite
 
 > La Documentation de SQLite3 est disponible à l'adresse: (https://www.sqlite.org/index.html)
 
 
-SQLite est une librairie logicielle implémentant un moteur de base de données SQL.
+SQLite est une librairie logicielle implémentant un moteur de base de données SQL. Ce moteur est autonome, leger et ne nécessite aucune étape de configuration. Même si ce moteur est léger, il permet toutefois de gérer des bases de données de très grande tailles (> 140 To). Pour ces raisons, le moteur SQLite est l'un des plus utilisé au monde.
+
+SQLite gère la plupart des requêtes SQL. La requête `SELECT` permet de rechercher du contenu dans une base de donnée. Sa syntaxe est la suivante
+
+```
+SELECT  attribut1, attribut2, ...
+FROM    table
+WHERE   attribute1 = valeur
+```
+
+Les requêtes `INSERT`, `UPDATE` et `DELETE` permettent d'ajouter, de modifier ou de supprimer du contenu dans la base de données. Ces requêtes utilisent les syntaxes suivantes:
+
+```
+INSERT  INTO table  (attribut1, attribut2, ... )
+        VALUES      (valeur1, valeur2, ...)
+```
+
+```
+UPDATE  table  
+SET     attribut2= valeur2
+WHERE   attribute1 = valeur
+```
+
+```
+DELETE FROM table  
+WHERE   attribute1 = valeur
+```
 
 
 ## Implémentation (Part IV)
