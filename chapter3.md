@@ -87,7 +87,9 @@ Pour utiliser nos templates Jinja2 avec notre application Flask, nous devons pr�
 * un template html disponible dans le repertoire `templates`.
 * une liste de variables à passer au template.
 
-Le programme suivant montre comment intégrer les templates `base.html` et `index.html` dans notre application Flask. Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src3).
+Le programme suivant montre comment intégrer les templates `base.html` et `index.html` dans notre application Flask. 
 
 [import](./src/src3/server.py)
+
+Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src3).
 

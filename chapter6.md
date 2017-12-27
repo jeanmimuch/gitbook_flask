@@ -34,8 +34,8 @@ Avant la fermeture de la balise `<body>`, il faut également importer un ensembl
 
 ## Implémentation (Part V)
 
-Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src6). La vidéo présentée ci-dessous illustre le rendu final de notre application.
+La vidéo présentée ci-dessous illustre le rendu final de notre application.
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/3TWU1YbLeGA?rel=0" frameborder="0" allowfullscreen></iframe>
 
-
+Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src6).

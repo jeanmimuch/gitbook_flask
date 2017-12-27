@@ -59,5 +59,5 @@ L'image ci-dessous présente la première page de notre application.
 
 ![Application de gestion de contacts](img/app1.png)
 
-
+Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src2).
 

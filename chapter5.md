@@ -109,8 +109,10 @@ Dans notre première implémentation, les urls permettant de modifier ou de supp
 
 ### Application Flask
 
-Le code présenté ci-dessous présente le contenu de notre fichier `server.py`. Ce fichier comporte plusieurs fonctions permettant de simplifier la gestion de la base de données (`get_db`, `query_db`, `change_db`, `close_connection`). Ces fonctions sont appelés par nos fonctions permettant de lister, d'ajouter, de modifier ou de supprimer du contenu. Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src5).
+Le code présenté ci-dessous présente le contenu de notre fichier `server.py`. Ce fichier comporte plusieurs fonctions permettant de simplifier la gestion de la base de données (`get_db`, `query_db`, `change_db`, `close_connection`). Ces fonctions sont appelés par nos fonctions permettant de lister, d'ajouter, de modifier ou de supprimer du contenu. 
 
 [import](./src/src5/server.py)
+
+Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src5).
 
 
