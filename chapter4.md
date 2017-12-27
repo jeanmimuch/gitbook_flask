@@ -10,7 +10,7 @@
 
 ## Contexte
 
-Dans toutes les applications informatiques de gestion, l'utilisateur peut consulter des informations mais également, si il en a l'autorisation, les éditer. Pour éditer ces informations, l'utilisateur doit renvoyer un formulaire complété au serveur.
+Dans toutes les applications informatiques de gestion, l'utilisateur peut consulter des informations mais également, si il en a l'autorisation, les éditer. Pour éditer ces informations, l'utilisateur doit renvoyer un formulaire au serveur. Ce formulaire est le plus ouvent codé en HTML5.
 
 ## Principe
 
@@ -71,7 +71,7 @@ Le tableau présenté ci-dessous présente la liste des types disponibles en HTM
 
 
 
-## Troisième Implémentation
+## Implémentation (Part III)
 
 ### Templates HTML
 
@@ -116,7 +116,7 @@ Le fichier `delete.html` contient un formulaire permettant à l'utilisateur de c
 
 ### Application Flask
 
-Pour gérer la consultation et l'édition des informations, notre fichier `server.py` intègre trois nouveaux décorateurs de fonctions . Les fonctions `create`, `update`, `delete` gèrent à la fois le traitement des requêtes `get` (envoi des formulaires au client) que le traitement des requêtes `post` (modification des informations au niveau du serveur). Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `ìd`. Ce paramètre permet d'identifier de manière unique un contact.
+Pour gérer la consultation et l'édition des informations, notre fichier `server.py` intègre trois nouveaux décorateurs de fonctions . Les fonctions `create`, `update`, `delete` gèrent à la fois le traitement des requêtes `get` (envoi des formulaires au client) que le traitement des requêtes `post` (modification des informations côté serveur). Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `ìd`. Ce paramètre permet d'identifier de manière unique un contact.
 
 [import](./src/src4/server.py)
 

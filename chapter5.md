@@ -21,7 +21,7 @@ Actuellement, notre application utilise une liste Python pour stocker les inform
 SQLite est une librairie logicielle implémentant un moteur de base de données SQL.
 
 
-## Quatrième Implémentation
+## Implémentation (Part IV)
 
 Dans notre quatrième implémentation, nous allons considérer l'organisation de fichiers suivante:
 

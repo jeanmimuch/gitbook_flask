@@ -57,7 +57,7 @@ Lors de l'héritage, certains blocs de codes peuvent être surchargés. Ces bloc
 ```
 
 
-## Seconde Implémentation
+## Implémentation (Part II)
 
 Pour notre application, nous allons créer le contenu des pages html à partir de deux templates: `base.html`et `index.html`
 Pour intégrer ces templates à notre application, les fichiers doivent respecter une arborescence particulière. Plus précisement, le répertoire de notre projet doit être organisé de la manière suivante:

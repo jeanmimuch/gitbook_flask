@@ -47,7 +47,7 @@ $ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 Si tout fonctionne bien, la page web doit alors afficher la chaine "Hello, World!".
 
-## Première implémentation
+## Implémentation (Part I)
 
 Pour implémenter notre application, nous allons tout d'abord stocker nos contacts dans une liste python nommée `contact_list`. Cette liste sera initialisée directement dans le fichier `server.py`.
 
