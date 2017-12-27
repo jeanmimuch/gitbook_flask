@@ -43,7 +43,7 @@ Jinja2 intègre deux structures de contrôle: la boucle et le test conditionnel.
 {% if ... %} ... {% else %} ... {% endif %}
 ```
 
-Pour éviter des répétitions entre templates, il est possible de recourir à un mécanisme d'héritage. Pour utiliser ce mécanisme, il faut indiquer à la première ligne du template:
+Pour éviter des répétitions entre templates, il est possible de recourir à un mécanisme d'héritage. Pour hériter de la structure d'un template `base.html`, il faut indiquer à la première ligne du template hérité:
 
 ```
 {% extends 'base.html' %} 
