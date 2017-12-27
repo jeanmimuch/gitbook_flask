@@ -31,6 +31,36 @@ La balise `<form>` contient plusieurs attributs:
 * L'attribut `action` (optionnel) indique à quelle adresse les données seront envoyées. Si l'attribut `action` n'est pas spécifiée, le formulaire est renvoyé à la même url.
 * L'attribut `method` indique comment les données seront envoyées. Il existe deux methodes possibles: `get`et `post`. En utilisant la méthode `get`, les données sont envoyées via l'url. En utilisant la méthode `post`, les données sont envoyées dans le corps de la requête (méthode recommandée). 
 
+<table>
+    <tr>
+        <th>Type</th>
+        <th>Rendu</th>
+    </tr>
+    <tr><td>button</td><td><input type="button" /></td></tr>
+    <tr><td>checkbox</td><td><input type="checkbox" /></td></tr>
+    <tr><td>color</td><td><input type="color" /></td></tr>
+    <tr><td>date</td><td><input type="date" /></td></tr>
+    <tr><td>datetime-local</td><td><input type="datetime-local" /></td></tr>
+    <tr><td>email</td><td><input type="email" /></td></tr>
+    <tr><td>file</td><td><input type="file" /></td></tr>
+    <tr><td>image</td><td><input type="image" /></td></tr>
+    <tr><td>month</td><td><input type="month" /></td></tr>
+    <tr><td>number</td><td><input type="number" /></td></tr>
+    <tr><td>password</td><td><input type="password" /></td></tr>
+    <tr><td>radio</td><td><input type="radio" /></td></tr>
+    <tr><td>range</td><td><input type="range" /></td></tr>
+    <tr><td>search</td><td><input type="search" /></td></tr>
+    <tr><td>submit</td><td><input type="submit" /></td></tr>
+    <tr><td>tel</td><td><input type="tel" /></td></tr>
+    <tr><td>text</td><td><input type="text" /></td></tr>
+    <tr><td>time</td><td><input type="time" /></td></tr>
+    <tr><td>url</td><td><input type="url" /></td></tr>
+    <tr><td>week</td><td><input type="week" /></td></tr>
+
+</table>
+
+
+
 ## Troisième Implémentation
 
 ### Templates HTML
