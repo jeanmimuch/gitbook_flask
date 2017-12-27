@@ -10,7 +10,7 @@
 
 ## Contexte
 
-Dans toutes les applications informatiques de gestion, l'utilisateur peut consulter des informations mais également, si il en a l'autorisation, les éditer (création, modification ou suppression). Pour éditer ces informations, l'utilisateur (client) doit renvoyer un formulaire HTML5 au serveur.
+Dans toutes les applications informatiques de gestion, l'utilisateur peut consulter des informations mais également, si il en a l'autorisation, les éditer. Pour éditer ces informations, l'utilisateur doit renvoyer un formulaire complété au serveur.
 
 ## Principe
 
@@ -18,7 +18,7 @@ Dans toutes les applications informatiques de gestion, l'utilisateur peut consul
 
 Un formulaire HTML est composé d'un ou plusieurs élements. Ceux-ci peuvent être des zones de texte, des boîtes de sélection, des boutons, des cases à cocher ou des boutons radio. Sauf cas particulier, un formulaire intègre également un bouton de soumission permettant de déclencher la transmission des données vers le serveur.
 
-Pour réaliser un formulaire en HTML, il fait encapsuler un ensemble d'élements (`<input>`, `<select>`, etc) dans une balise `<form>`. 
+Pour réaliser un formulaire en HTML, il faut utiliser une balise `<form>`. 
 
 ```
 <form action="#" method="get">
@@ -31,12 +31,22 @@ La balise `<form>` contient plusieurs attributs:
 * L'attribut `action` (optionnel) indique à quelle adresse les données seront envoyées. Si l'attribut `action` n'est pas spécifiée, le formulaire est renvoyé à la même url.
 * L'attribut `method` indique comment les données seront envoyées. Il existe deux methodes possibles: `get`et `post`. En utilisant la méthode `get`, les données sont envoyées via l'url. En utilisant la méthode `post`, les données sont envoyées dans le corps de la requête (méthode recommandée). 
 
+Plusieurs champs peuvent être encapsulé dans une balise `<form>`. Le plus souvent, ces champs sont définis via la balise
+
+```
+<input type= ... value= ... >
+```
+
+Le tableau présenté ci-dessous présente la liste des types disponibles en HTML5.
+
+
+
 <table>
     <tr>
         <th>Type</th>
         <th>Rendu</th>
     </tr>
-    <tr><td>button</td><td><input type="button" /></td></tr>
+    <tr><td>button</td><td><input type="button" value="button" /></td></tr>
     <tr><td>checkbox</td><td><input type="checkbox" /></td></tr>
     <tr><td>color</td><td><input type="color" /></td></tr>
     <tr><td>date</td><td><input type="date" /></td></tr>
