@@ -27,13 +27,13 @@ Le moteur de template Jinja2 permet, à partir de plusieurs informations passée
 Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. 
 
 
-Pour inclure le contenu d'une variable dans un template Jinja2, il faut utiliser la syntaxe:
+Pour inclure le contenu d'une variable dans un template Jinja2, il faut utiliser le tag:
 
 ```
 {{variable}}
 ``` 
 
-Jinja2 intègre deux structures de contrôle: la boucle et le test conditionnel. 
+Jinja2 intègre deux structures de contrôle: la boucle et le test conditionnel. Ces structures sont définis par les tags: 
 
 ```
 {% for ... in ... %} ... {% endfor %}
@@ -43,9 +43,11 @@ Jinja2 intègre deux structures de contrôle: la boucle et le test conditionnel.
 {% if ... %} ... {% else %} ... {% endif %}
 ```
 
-Pour éviter des répétitions entre templates, il est possible d'utiliser un mécanisme d'héritage. Pour utiliser ce mécanisme, il faut indiquer à la première ligne du template:
+Pour éviter des répétitions entre templates, il est possible de recourir à un mécanisme d'héritage. Pour utiliser ce mécanisme, il faut indiquer à la première ligne du template:
 
-
+```
+{% extends 'base.html' %} 
+```
 
 Lors d
 
