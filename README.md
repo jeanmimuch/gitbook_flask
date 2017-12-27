@@ -1,6 +1,6 @@
 # Introduction
 
-Ce tutoriel décrit la procédure pour réaliser une application web en python. Il s'adresse à un public ayant des bases en python, en base de données et en HTML.
+Ce tutoriel décrit la procédure pour réaliser une application web en python. Il s'adresse à un public ayant des bases en [Python](https://vincentchoqueuse.gitbooks.io/gitbook-python/content/), en base de données et en HTML.
 
 ## Objectif
 
