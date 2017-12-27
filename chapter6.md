@@ -1,4 +1,4 @@
-# Le framework Boostrap 
+# Le framework Bootstrap 
 
 <div>
 <img src="https://img.shields.io/badge/bootstrap-v4.00-brightgreen.svg"> 
@@ -23,7 +23,7 @@ L'importation de la librairie Boostrap s'obtient facilement en ajoutant dans la 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 ```
 
-A la fin de la balise `<body>`, il faut également importer un ensemble de libraires javascript:
+Avant la fermeture de la balise `<body>`, il faut également importer un ensemble de libraires javascript:
 
 ```
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -35,3 +35,7 @@ A la fin de la balise `<body>`, il faut également importer un ensemble de libra
 ## Implémentation (Part V)
 
 Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src6). La vidéo présentée ci-dessous illustre le rendu final de notre application.
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/3TWU1YbLeGA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
