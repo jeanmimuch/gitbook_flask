@@ -116,7 +116,12 @@ Le fichier `delete.html` contient un formulaire permettant à l'utilisateur de c
 
 ### Application Flask
 
-Pour gérer la consultation et l'édition des informations, notre fichier `server.py` intègre trois nouveaux décorateurs de fonctions . Les fonctions `create`, `update`, `delete` gèrent à la fois le traitement des requêtes `get` (envoi des formulaires au client) que le traitement des requêtes `post` (modification des informations côté serveur). Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `ìd`. Ce paramètre permet d'identifier de manière unique un contact.
+Pour gérer la consultation et l'édition des informations, notre fichier `server.py` intègre trois nouveaux décorateurs de fonctions . Les fonctions `create`, `update`, `delete` gèrent:
+
+* le traitement des requêtes `get` (envoi des formulaires au client)
+* le traitement des requêtes `post` (modification des informations côté serveur). 
+
+Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `ìd`. Ce paramètre permet d'identifier de manière unique un contact.
 
 [import](./src/src4/server.py)
 
