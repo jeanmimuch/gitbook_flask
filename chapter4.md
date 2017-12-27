@@ -121,6 +121,8 @@ Pour gérer la consultation et l'édition des informations, notre fichier `serve
 * le traitement des requêtes `get` (envoi des formulaires au client),
 * le traitement des requêtes `post` (modification des informations côté serveur). 
 
+Lors d'une requête de type `post`, le contenu du formulaire HTML5 renvoyé est extrait au moyen de la fonction `request.form.to_dict()`. Cette fonction retourne un dictionnaire Python. Les clés de ce dictionnaire correspondent aux attributs `name` de nos balises ìnput`.
+
 Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `ìd`. Ce paramètre permet d'identifier de manière unique un contact.
 
 [import](./src/src4/server.py)
