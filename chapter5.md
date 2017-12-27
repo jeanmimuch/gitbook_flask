@@ -49,7 +49,7 @@ WHERE   attribute1 = valeur
 
 ## Implémentation (Part IV)
 
-Dans notre quatrième implémentation, nous allons considérer l'organisation de fichiers suivante:
+Dans notre quatrième implémentation, nous allons considérer l'arborescence 
 
 ```
 server.py
@@ -64,7 +64,7 @@ data.db
 ```
 
 
-### Fichier data.db
+### data.db
 
 Depuis votre terminal, nous allons créer une base de données SQLite via la commande:
 
@@ -101,15 +101,15 @@ SELECT * FROM contact;
 
 La commande `.exit` permet de quitter l'invite de commande sqlite3.
 
-### Modification des Templates
+### Templates HTML
 
 Dans notre première implémentation, les urls permettant de modifier ou de supprimer les enregistrements étaient basées sur l'indexation de la liste `contact_list`. Nous allons maintenant utiliser le champ `ìd` de la table `contact`. Pour réaliser cette modification, nous devons remplacer les lignes 21 et 22 du template `ìndex.html` par
 
 [import:21-22,unindent:"true"](./src/src5/templates/index.html)
 
-### Modification du fichier `server.py`
+### Application Flask
 
-Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src5).
+Le code présenté ci-dessous présente le contenu de notre fichier `server.py`. Ce fichier comporte plusieurs fonctions permettant de simplifier la gestion de la base de données (`get_db`, `query_db`, `change_db`, `close_connection`). Ces fonctions sont appelés par nos fonctions permettant de lister, d'ajouter, de modifier ou de supprimer du contenu. Le code complet de notre application est disponible sur [Github](https://github.com/vincentchoqueuse/gitbook_flask/tree/master/src/src5).
 
 [import](./src/src5/server.py)
 
