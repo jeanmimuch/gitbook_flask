@@ -21,7 +21,7 @@ Dans notre première implémentation, nous avons créé le code html de notre si
 
 Le moteur de template Jinja2 permet, à partir de plusieurs informations passées en entrée, de construire un document avec une structure bien spécifique. Concrêtement, la construction d'un document html s'obtient à partir de deux fichiers.
 
-* Un script Python appelant la fonction `render_template` de Flask / Jinja2. Cette fonction est appelée avec deux paramètres: le nom du template et les variables à passer au template.
+* Une application Flask appelant la fonction Jinja2 `render_template`. Cette fonction est appelée avec deux paramètres: le nom du template et une liste de variables à passer au template.
 * Un template html permettant la construction du document.
 
 Pour construire un document à partir des informations passées en entrée, Jinja2 intègre des **tags** particuliers. 
