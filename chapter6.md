@@ -10,14 +10,14 @@
 
 ## Contexte
 
-Même si notre application est fonctionnelle, son design reste relativement sommaire. Le Web design est une discpline relativement complexe. En effet, cette discipline nécessite d'avoir des qualités artistiques (ce qui n'est pas donné à tout le monde) mais pas que. Il faut également avoir des notions en UX design et en programmation. Pour developper rapidement une interface de qualité, il est souvent préferable d'utiliser un framework front-end (orienté client). Dans cette partie, nous allons utiliser le framework le plus populaire: Bootstrap.
+Même si notre application est fonctionnelle, son design reste relativement sommaire. Le Web design est une discipline relativement complexe. En effet, cette discipline nécessite d'avoir des qualités artistiques (ce qui n'est pas donné à tout le monde !) mais pas que: il faut également avoir des notions en UX design et en programmation. Pour developper rapidement une interface de qualité, il est souvent préférable d'utiliser un framework front-end (orienté client). Dans cette partie, nous allons utiliser le framework le plus populaire: Bootstrap.
 
 
 ## Principe
 
-Boostrap est un framework front-end developpé par des employés de Twitter. Ce framework possède en ensemble de classes CSS et de fonctions Javascript permettant de réaliser des pages complexes. Boostrap permet également la gestion de page **Responsive** c-a-d s'adaptant automatiquement à la résolution de l'écran. Cela permet entre autre de developper une seule et même interface pour des plateformes ayant des tailles d'écran très différentes (ordinateur, téléphone, tablette, etc).
+Bootstrap est un framework front-end développé par des employés de Twitter. Ce framework possède en ensemble de classes CSS et de fonctions Javascript permettant de réaliser des pages complexes. Bootstrap permet la construction de pages **Responsive** c-a-d s'adaptant automatiquement à la résolution de l'écran. Cela permet entre autre de developper une seule et même interface pour des plateformes ayant des tailles d'écran très différentes (ordinateur, téléphone, tablette, etc).
 
-L'importation de la librairie Boostrap s'obtient facilement en ajoutant dans la balise `head` de nos pages HTML, la feuille de style suivante
+L'importation de la librairie Bootstrap s'obtient en ajoutant dans la balise `head` de nos pages HTML, la feuille de style suivante
 
 ```
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">

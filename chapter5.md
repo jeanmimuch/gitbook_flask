@@ -11,14 +11,14 @@
 
 ## Contexte
 
-Actuellement, notre application utilise une liste Python pour stocker les informations. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues. En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En plus du stockage persistant, le moteur SQLite gèrent également la gestion des requêtes SQL.
+Actuellement, notre application utilise une liste Python pour stocker nos contacts. Lorsque le serveur est relancé, les données sont réinitialisés et toutes les modifications effectuées par l'utilisateur sont perdues. En pratique, il est nécessaire d'utiliser un moyen de stockage persistant. Dans cette partie, nous allons utiliser une **base de données** sqlite. En plus du stockage persistant, le moteur SQLite gèrent également les requêtes SQL.
 
 ## Le moteur SQLite
 
 > La Documentation de SQLite3 est disponible à l'adresse: (https://www.sqlite.org/index.html)
 
 
-SQLite est une librairie logicielle implémentant un moteur de base de données SQL. Ce moteur est autonome, leger et ne nécessite aucune étape de configuration. Même si ce moteur est léger, il permet toutefois de gérer des bases de données de très grande tailles (> 140 To). Pour ces raisons, le moteur SQLite est l'un des plus utilisé au monde.
+SQLite est une librairie logicielle implémentant un moteur de base de données SQL. Ce moteur est autonome, léger et ne nécessite aucune étape de configuration. Même si ce moteur est léger, il permet toutefois de gérer des bases de données de très grandes tailles (> 140 To). Pour ces raisons, le moteur SQLite est l'un des plus utilisé.
 
 SQLite gère la plupart des requêtes SQL. La requête `SELECT` permet de rechercher du contenu dans une base de donnée. Sa syntaxe est la suivante
 
@@ -49,7 +49,7 @@ WHERE   attribute1 = valeur
 
 ## Implémentation (Part IV)
 
-Dans notre quatrième implémentation, nous allons considérer l'arborescence 
+Dans notre quatrième implémentation, nous allons considérer l'arborescence suivante:
 
 ```
 server.py
@@ -83,7 +83,7 @@ sqlite> CREATE TABLE contact(
             tel TEXT NOT NULL);
 ```
 
-Une fois que la table `contact` a été crée, nous pouvons y ajouter des élements via la syntaxe `INSERT INTO ... VALUES ...`.
+Une fois que la table `contact` a été crée, nous pouvons y ajouter des éléments via la syntaxe `INSERT INTO ... VALUES ...`.
 
 ```
 sqlite> INSERT INTO CONTACT (nom,prenom,mail,tel)
@@ -93,7 +93,7 @@ sqlite> INSERT INTO CONTACT (nom,prenom,mail,tel)
                 ("Fourier","Joseph","joseph@maserie.fr","09.00.03.00.01");
 ```
 
-Pour vérifier que tout s'est bien passé, il est possible de lister l'ensemble des élements de la table `contact` via la commande
+Pour vérifier que tout s'est bien passé, il est possible de lister l'ensemble des éléments de la table `contact` via la commande
 
 ```
 SELECT * FROM contact;
@@ -103,13 +103,13 @@ La commande `.exit` permet de quitter l'invite de commande sqlite3.
 
 ### Templates HTML
 
-Dans notre première implémentation, les urls permettant de modifier ou de supprimer les enregistrements étaient basées sur l'indexation de la liste `contact_list`. Nous allons maintenant utiliser le champ `ìd` de la table `contact`. Pour réaliser cette modification, nous devons remplacer les lignes 21 et 22 du template `ìndex.html` par
+Dans notre première implémentation, les urls permettant de modifier ou de supprimer les enregistrements étaient basées sur l'indexation de la liste `contact_list`. Nous allons maintenant utiliser le champ `id` de la table `contact`. Pour réaliser cette modification, nous devons remplacer les lignes 21 et 22 du template `ìndex.html` par
 
 [import:21-22,unindent:"true"](./src/src5/templates/index.html)
 
 ### Application Flask
 
-Le code présenté ci-dessous présente le contenu de notre fichier `server.py`. Ce fichier comporte plusieurs fonctions permettant de simplifier la gestion de la base de données (`get_db`, `query_db`, `change_db`, `close_connection`). Ces fonctions sont appelés par nos fonctions permettant de lister, d'ajouter, de modifier ou de supprimer du contenu. 
+Le code présenté ci-dessous présente le contenu de notre fichier `server.py`. Ce fichier comporte plusieurs fonctions permettant de simplifier la gestion de la base de données (`get_db`, `query_db`, `change_db`, `close_connection`). Ces fonctions sont appelées par nos fonctions permettant de lister, d'ajouter, de modifier ou de supprimer du contenu. 
 
 [import](./src/src5/server.py)
 

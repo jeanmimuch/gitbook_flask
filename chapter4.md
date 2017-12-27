@@ -10,13 +10,13 @@
 
 ## Contexte
 
-Dans toutes les applications informatiques de gestion, l'utilisateur peut consulter des informations mais également, si il en a l'autorisation, les éditer. Pour éditer ces informations, l'utilisateur doit renvoyer un formulaire au serveur. Ce formulaire est le plus ouvent codé en HTML5.
+Dans la plupart des applications informatiques, l'utilisateur peut consulter des informations mais également, si il en a l'autorisation, les éditer. Pour éditer ces informations, l'utilisateur doit renvoyer un formulaire au serveur. Ce formulaire est le plus souvent codé en HTML5.
 
 ## Principe
 
 > La documentation HTML5 sur les formulaires est disponible à l'adresse: (https://www.w3schools.com/tags/tag_form.asp)
 
-Un formulaire HTML est composé d'un ou plusieurs élements. Ceux-ci peuvent être des zones de texte, des boîtes de sélection, des boutons, des cases à cocher ou des boutons radio. Sauf cas particulier, un formulaire intègre également un bouton de soumission permettant de déclencher la transmission des données vers le serveur.
+Un formulaire HTML est composé d'un ou plusieurs éléments. Ceux-ci peuvent être des zones de texte, des boîtes de sélection, des boutons, des cases à cocher ou des boutons radio. Sauf cas particulier, un formulaire intègre également un bouton de soumission permettant de déclencher la transmission des données vers le serveur.
 
 Pour réaliser un formulaire en HTML, il faut utiliser une balise `<form>`. 
 
@@ -28,18 +28,16 @@ Nom: <input type="text" name="nom">
 ```
 
 La balise `<form>` contient plusieurs attributs:
-* L'attribut `action` (optionnel) indique à quelle adresse les données seront envoyées. Si l'attribut `action` n'est pas spécifiée, le formulaire est renvoyé à la même url.
-* L'attribut `method` indique comment les données seront envoyées. Il existe deux methodes possibles: `get`et `post`. En utilisant la méthode `get`, les données sont envoyées via l'url. En utilisant la méthode `post`, les données sont envoyées dans le corps de la requête (méthode recommandée). 
+* L'attribut `action` (optionnel) indique où les données sont envoyées. Si l'attribut `action` n'est pas spécifiée, le formulaire est renvoyé à la même adresse.
+* L'attribut `method` indique comment les données sont envoyées. Il existe deux méthodes possibles: `get`et `post`. En utilisant la méthode `get`, les données sont envoyées via l'url. En utilisant la méthode `post`, les données sont envoyées dans le corps de la requête (méthode recommandée). 
 
-Plusieurs champs peuvent être encapsulé dans une balise `<form>`. Le plus souvent, ces champs sont définis via la balise
+Plusieurs champs peuvent être encapsulés dans une balise `<form>`. Le plus souvent, ces champs sont définis via la balise
 
 ```
 <input type= ... value= ... >
 ```
 
 Le tableau présenté ci-dessous présente la liste des types disponibles en HTML5.
-
-
 
 <table>
     <tr>
@@ -96,7 +94,7 @@ Le template `index.html` permet de lister l'ensemble des contacts dans un tablea
 
 #### form.html
 
-Le template `form.html` contient un formulaire permettant d'éditer les informations d'un contact. Ce formulaire utilise la méthode `post` pour transmettre les informations aux serveurs. Les différents élements du formulaire sont initialisés via la variable `contact`.
+Le template `form.html` contient un formulaire permettant d'éditer les informations d'un contact. Ce formulaire utilise la méthode `post` pour transmettre les informations au serveur. Les différents éléments du formulaire sont initialisés via la variable `contact`.
 
 [import](./src/src4/templates/form.html)
 
@@ -116,18 +114,18 @@ Le fichier `delete.html` contient un formulaire permettant à l'utilisateur de c
 
 ### Application Flask
 
-Pour gérer la consultation et l'édition des informations, notre fichier `server.py` intègre trois nouveaux décorateurs de fonctions . Les fonctions `create`, `update`, `delete` gèrent:
+Pour gérer la consultation et l'édition des informations, notre fichier `server.py` intègre trois nouveaux décorateurs de fonctions. Les fonctions `create`, `update`, `delete` gèrent:
 
 * le traitement des requêtes `get` (envoi des formulaires au client),
 * le traitement des requêtes `post` (modification des informations côté serveur). 
 
-Lors d'une requête de type `post`, le contenu du formulaire HTML5 renvoyé est extrait au moyen de la fonction `request.form.to_dict()`. Cette fonction retourne un dictionnaire Python. Les clés de ce dictionnaire correspondent aux attributs `name` de nos balises ìnput`.
+Lors d'une requête de type `post`, le contenu du formulaire HTML5 est extrait au moyen de la fonction `request.form.to_dict()`. Cette fonction retourne un dictionnaire Python. Les clés de ce dictionnaire correspondent aux attributs `name` de nos balises `input`.
 
-Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `ìd`. Ce paramètre permet d'identifier de manière unique un contact.
+Concernant les fonctions `update` et `delete`, ces deux fonctions prennent en entrée un paramètre entier `id`. Ce paramètre permet d'identifier de manière unique un contact.
 
 [import](./src/src4/server.py)
 
-La vidéo présentée ci dessous illustre le fonctionnement de notre application.
+La vidéo présentée ci-dessous illustre le fonctionnement de notre application.
  
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/CZIkn_bdoDg?rel=0" frameborder="0" allowfullscreen></iframe>
 
