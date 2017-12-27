@@ -10,12 +10,12 @@
 
 ## Contexte
 
-Même si notre application est fonctionnelle, son design reste relativement sommaire. Le Web design est une discpline relativement complexe. En effet, cette discpline nécessite d'avoir certaines qualités artistiques (ce qui n'est pas donné à tout le monde) mais pas que. Il faut également avoir des notions en UX design et en programmation. Pour developper rapidement une interface de qualité, il est souvent recommandé d'utiliser un framework front-end (orienté client). Dans cette partie, nous allons nous interesser au framework le plus utilisé: Bootstrap.
+Même si notre application est fonctionnelle, son design reste relativement sommaire. Le Web design est une discpline relativement complexe. En effet, cette discipline nécessite d'avoir des qualités artistiques (ce qui n'est pas donné à tout le monde) mais pas que. Il faut également avoir des notions en UX design et en programmation. Pour developper rapidement une interface de qualité, il est souvent préferable d'utiliser un framework front-end (orienté client). Dans cette partie, nous allons utiliser le framework le plus populaire: Bootstrap.
 
 
 ## Principe
 
-Boostrap est un framework front-end developpé par des employés de Twitter. Ce framework possède en ensemble de classes CSS et de fonctions Javascript permettant de réaliser des pages complexes. Boostrap permet également la gestion de page "Responsive" c-a-d s'adaptant automatiquement à la résolution du navigateur web. Cela permet entre autre de developper une seule et même interface pour des plateformes ayant des tailles d'écran très différentes (ordinateur, téléphone, tablette, etc).
+Boostrap est un framework front-end developpé par des employés de Twitter. Ce framework possède en ensemble de classes CSS et de fonctions Javascript permettant de réaliser des pages complexes. Boostrap permet également la gestion de page **Responsive** c-a-d s'adaptant automatiquement à la résolution de l'écran. Cela permet entre autre de developper une seule et même interface pour des plateformes ayant des tailles d'écran très différentes (ordinateur, téléphone, tablette, etc).
 
 L'importation de la librairie Boostrap s'obtient facilement en ajoutant dans la balise `head` de nos pages HTML, la feuille de style suivante
 
