@@ -29,7 +29,9 @@ Pour construire un document à partir des informations passées en entrée, Jinj
 
 Pour inclure le contenu d'une variable dans un template Jinja2, il faut utiliser la syntaxe:
 
-```{{variable}}``` 
+```
+{{variable}}
+``` 
 
 Jinja2 intègre deux structures de contrôle: la boucle et le test conditionnel. 
 
