@@ -88,7 +88,7 @@ server.py
 
 #### index.html
 
-Le template `index.html` permet de lister l'ensemble des contacts dans un tableau html. Par rapport à notre version précédente, nous avons ajouté une colonne `action`. Cette colonne comporte deux liens hypertextes (balise `<a href= ... > ... </a>```). Ces liens pointent vers des urls permettant la modification ou la suppression d'un contact particulier. Pour identifier de manière unique un contact, ces urls utilisent la variable `loop.index`.
+Le template `index.html` permet de lister l'ensemble des contacts dans un tableau html. Par rapport à notre version précédente, nous avons ajouté une colonne `action`. Cette colonne comporte deux liens hypertextes (balise ``<a href= ... > ... </a>``). Ces liens pointent vers des urls permettant la modification ou la suppression d'un contact particulier. Pour identifier de manière unique un contact, ces urls utilisent la variable `loop.index`.
 
 [import](./src/src4/templates/index.html)
 
