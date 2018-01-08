@@ -15,6 +15,9 @@ Même si notre application est fonctionnelle, son design reste relativement somm
 
 ## Principe
 
+> La Documentation de Bootstrap4 est disponible à l'adresse: (https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+
 Bootstrap est un framework front-end développé par des employés de Twitter. Ce framework possède en ensemble de classes CSS et de fonctions Javascript permettant de réaliser des pages complexes. Bootstrap permet la construction de pages **Responsive** c-a-d s'adaptant automatiquement à la résolution de l'écran. Cela permet entre autre de developper une seule et même interface pour des plateformes ayant des tailles d'écran très différentes (ordinateur, téléphone, tablette, etc).
 
 L'importation de la librairie Bootstrap s'obtient en ajoutant dans la balise `head` de nos pages HTML, la feuille de style suivante
